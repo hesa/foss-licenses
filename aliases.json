@@ -5,6 +5,10 @@
         {
             "spdxid": "GPL-2.0-or-later",
             "names": [ "GPLv2+", "GPL2+" ]
+	},
+        {
+            "spdxid": "BSD-3-Clause",
+            "names": [ "BSD3" ]
 	}
     ]
 }
