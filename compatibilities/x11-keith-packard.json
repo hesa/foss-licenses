@@ -1,0 +1,8 @@
+{
+    "name": "X11-Style (Keith Packard)",
+    "spdxid": "LicenseRef-flict-keith-packard",
+    "scancode_licensedb_id": "x11-keith-packard",
+    "compatibility_as": "HPND",
+    "license_url": "https://scancode-licensedb.aboutcode.org/x11-keith-packard.LICENSE",
+    "comment": "This license can be found in misc freedesktop/X11 related projects."
+}
