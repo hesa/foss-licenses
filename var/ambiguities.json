@@ -12,14 +12,14 @@
               "License :: OSI Approved :: Academic Free License",
               "ACADEMIC FREE LICENSE _AFL_"
             ],
-            "problem": "This license has many different versions (1.1, 1.2, 2.0, 2.1 and 3.0). Without a version number it is not possible to determine which of the versions is meant."
+            "problem": "This license has many different versions (1.1, 1.2, 2.0, 2.1 and 3.0). Without a version number it is impossible to determine which of the versions is meant."
         },
         "GNU Affero General Public License": {
             "aliases": [
               "AGPL",
               " Affero General Public License"
             ],
-            "problem": "This license has different versions (1.0, 2.0 and 3.0) and different names (version 1.0 does not have GNU in the name). Without a version number it is not possible to determine which of the versions is meant."
+            "problem": "This license has different versions (1.0, 2.0 and 3.0) and different names (version 1.0 does not have GNU in the name). Without a version number it is impossible to determine which of the versions is meant."
         },
         "Apache License": {
             "aliases": [
@@ -45,7 +45,7 @@
               "APACHE",
               "APACHE SOFTWARE LICENSE"
             ],
-            "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
+            "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is impossible to determine which of the versions is meant."
         },
         "Apple Public Source License": {
             "aliases": [
@@ -53,7 +53,7 @@
                 "Apple Public Source License",
                 "Apple Public Source License (APSL)"
             ],
-            "problem": "This license has different version (1.0, 1.1, 1.2 and 2.0). Without a version number it is not possible to determine which of the versions is meant."
+            "problem": "This license has different version (1.0, 1.1, 1.2 and 2.0). Without a version number it is impossible to determine which of the versions is meant."
         },
         "Artistic License": {
             "aliases": [
@@ -64,7 +64,7 @@
               "Artistc",
               "ARTISTIC LICENSE"
             ],
-            "problem": "This license has different version (1.0, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
+            "problem": "This license has different version (1.0, and 2.0). Without a version number it is impossible to determine which of the versions is meant."
         },
         "Boost": {
             "aliases": [
@@ -76,7 +76,7 @@
                 "boost",
                 "Boost-Software-License"
             ],
-            "problem": "There are at least two versions of the Boost license (Original Boost and BSL-1.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+            "problem": "There are at least two versions of the Boost license (Original Boost and BSL-1.0). Without the version/variant of the license it is impossible to determine which of the versions is meant."
         },
         "BSD": {
             "aliases": [
@@ -108,7 +108,7 @@
               "bsd license",
               "BSD"
             ],
-            "problem": "There are a couple of variants or versions of the BSD license (0BSD, BSD-1-Clause, BSD-2-Clause, BSD-3-Clause and BSD-4-Clause). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+            "problem": "There are a couple of variants or versions of the BSD license (0BSD, BSD-1-Clause, BSD-2-Clause, BSD-3-Clause and BSD-4-Clause). Without the version/variant of the license it is impossible to determine which of the versions is meant."
         },
         "BSL": {
           "aliases": [
@@ -120,12 +120,12 @@
       "Business Source License": {
         "aliases": [
         ],
-        "problem": "There are a couple of variants or versions of the Business Source License license (BUSL-1.0, BUSL-1.1). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+        "problem": "There are a couple of variants or versions of the Business Source License license (BUSL-1.0, BUSL-1.1). Without the version/variant of the license it is impossible to determine which of the versions is meant."
       },
       "": {
         "aliases": [
         ],
-        "problem": "There are a couple of variants or versions of the Business Source License license (BUSL-1.0, BUSL-1.1). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+        "problem": "There are a couple of variants or versions of the Business Source License license (BUSL-1.0, BUSL-1.1). Without the version/variant of the license it is impossible to determine which of the versions is meant."
       },
         "Common Development and Distribution License": {
             "aliases": [
@@ -133,7 +133,7 @@
                 "CDDL-1",
                 "Common Development and Distribution License (CDDL)"
             ],
-            "problem": "There are two versions of the CDDL license (CDDL-1.0 and CDDL-1.1). Without the version/variant of the license it is not possible to determine which of the versions is meant."    
+            "problem": "There are two versions of the CDDL license (CDDL-1.0 and CDDL-1.1). Without the version/variant of the license it is impossible to determine which of the versions is meant."    
         },
         "Common Public License": {
             "aliases": [
@@ -141,13 +141,13 @@
                 "CPL",
                 "License :: OSI Approved :: Common Public License"
             ],
-            "problem": "There are couple of versions of the CPL license (0.5 and 1). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+            "problem": "There are couple of versions of the CPL license (0.5 and 1). Without the version/variant of the license it is impossible to determine which of the versions is meant."
         },
         "Creative Commons License": {
             "aliases": [
                 "Creative Commons"
             ],
-            "problem": "There are couple of varians and versions of the Creative Commons licenses. Without the version/variant of the license it is not possible to determine which of the versions is meant."
+            "problem": "There are couple of varians and versions of the Creative Commons licenses. Without the version/variant of the license it is impossible to determine which of the versions is meant."
         },
         "Dual License": {
             "aliases": [
@@ -161,7 +161,7 @@
               "Eclipse Public License (EPL)",
               "Eclipse Public Licenses"
             ],
-            "problem": "There are two versions of the EPL license (1.0 and 2.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+            "problem": "There are two versions of the EPL license (1.0 and 2.0). Without the version/variant of the license it is impossible to determine which of the versions is meant."
         },
         "Eiffel Forum License": {
             "aliases": [
@@ -169,20 +169,20 @@
                 "License :: Eiffel Forum License (EFL)",
                 "License :: Eiffel Forum License"
             ],
-            "problem": "There are two versions of the EFL license (1.0 and 2.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+            "problem": "There are two versions of the EFL license (1.0 and 2.0). Without the version/variant of the license it is impossible to determine which of the versions is meant."
         },
         "European Union Public Licence": {
             "aliases": [
                 "EUPL"
             ],
-            "problem": "There are two versions of the EUPL license (1.0, 1.1 and 1.2). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+            "problem": "There are two versions of the EUPL license (1.0, 1.1 and 1.2). Without the version/variant of the license it is impossible to determine which of the versions is meant."
         },
         "GCC Runtime Library exception": {
             "aliases": [
                 "GCC exception",
                 "GCC Exception"
             ],
-            "problem": "This exception has different version (2.0, '2.0 with note' and 3.0). Without a version number it is not possible to determine which of the versions is meant."
+            "problem": "This exception has different version (2.0, '2.0 with note' and 3.0). Without a version number it is impossible to determine which of the versions is meant."
         },
         "GNU": {
             "aliases": [
@@ -190,7 +190,7 @@
                 "License :: OSI Approved :: GNU...v3 or later",
               "License :: OSI Approved :: GNU...v2 or later"
             ],
-            "problem": "There a couple of licenses related to the GNU project. Without the name of the license and version number it is not possible to determine which of the versions is meant."
+            "problem": "There a couple of licenses related to the GNU project. Without the name of the license and version number it is impossible to determine which of the versions is meant."
         },
         "GNU Free Documentation License": {
             "aliases": [
@@ -198,17 +198,17 @@
                 "GFDL",
                 "License :: OSI Approved :: GNU Free Documentation License (FDL)"
             ],
-            "problem": "This license has different version (1.1, 1.2 and 1.3). Without a version number it is not possible to determine which of the versions is meant."
+            "problem": "This license has different versions; e.g. 1.1, 1.2 and 1.3. Without a version number it is impossible to determine which of the versions is meant."
         },
       "Indiana University Extreme! Lab Software License": {
         "aliases": [],
-        "problem": "This license has different versions (1.1 and 1.2 / xpp). Without a version number it is not possible to determine which of the versions is meant."
+        "problem": "This license has multiple versions. Without a version number it is impossible to determine which of the versions is meant."
       },
       "GNU Lesser General Public License with incorrect version": {
         "aliases": [
           "GNU Lesser General Public License v1.0"
         ],
-        "problem": "kkad"
+        "problem": "The GNU Lesser General Public License was originally published under version 2.0 for parity with GPL version 2."
       },
       "MIT Style": {
         "aliases": [
@@ -238,38 +238,38 @@
               "Mozilla Public License (MPL)",
               "Mozilla Public License"
             ],
-            "problem": "This license has different version (1.0, 1.1 and 2.0). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+            "problem": "This license has different version (1.0, 1.1 and 2.0). Without a version number clearly distinguishing the version it is impossible to determine which of the versions is meant."
         },
         "Netscape Public License": {
             "aliases": [
                 "License :: Netscape Public License (NPL)",
                 "NPL"
             ],
-            "problem": "This license has different version (1.0 and 1.1). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+            "problem": "This license has different version (1.0 and 1.1). Without a version number clearly distinguishing the version it is impossible to determine which of the versions is meant."
         },
         "OSI Approved": {
             "aliases": [
                 "License :: OSI Approved"
             ],
-            "problem": "OSI has approved many licenses. It is not possible to determine which license is meant with this information."
+            "problem": "OSI has approved many licenses. It is impossible to determine which license is being used without specific information like name, version, etc."
         },
         "OpenLDAP Public License": {
           "aliases": [
             "openldap",
             "OpenLDAP"
           ],
-          "problem": "This license has different versions (1.1, 1.2, 1.3, 1.4, 2.0, 2.0.1, 2.1, 2.2, 2.2.1, 2.2.2, 2.3, 2.4, 2.5, 2.6, 2.7 and 2.8) and variantes. Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+          "problem": "This license has different versions (1.1, 1.2, 1.3, 1.4, 2.0, 2.0.1, 2.1, 2.2, 2.2.1, 2.2.2, 2.3, 2.4, 2.5, 2.6, 2.7 and 2.8) and variantes. Without a version number clearly distinguishing the version it is impossible to determine which of the versions is meant."
         },
         "Open Software License": {
           "aliases": [
           ],
-          "problem": "This license has different versions (1.0, 1.1, 2.0, 2.1 and 3.0) and variantes. Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+          "problem": "This license has different versions (1.0, 1.1, 2.0, 2.1 and 3.0) and variantes. Without a version number clearly distinguishing the version it is impossible to determine which of the versions is meant."
         },
         "SIL Open Font License": {
             "aliases": [
                 "SIL OPEN FONT LICENSE"
             ],
-            "problem": "This license has different versions (1.0 and 1.1) and variantes. Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+            "problem": "This license has different versions (1.0 and 1.1) and variantes. Without a version number clearly distinguishing the version it is impossible to determine which of the versions is meant."
         },
         "Permissive": {
           "aliases": [
@@ -302,20 +302,20 @@
               "PYTHON SOFTWARE FOUNDATION LICENSE",
               "python software licence"
             ],
-            "problem": "This license has different versions (2.0 and 2.0.1). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+            "problem": "This license has different versions (2.0 and 2.0.1). Without a version number clearly distinguishing the version it is impossible to determine which of the versions is meant."
         },
         "Sun Industry Standards Source License": {
             "aliases": [
                 "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)",
               "SISSL"
             ],
-            "problem": "This license has different versions (1.0, 1.1 and 1.2). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+            "problem": "This license has different versions (1.0, 1.1 and 1.2). Without a version number clearly distinguishing the version it is impossible to determine which of the versions is meant."
         },
         "Unicode License": {
             "aliases": [
                 "Unicode"
             ],
-            "problem": "This license has different variants/versions (Unicode Terms of Use, Unicode-3.0, Unicode Inc License Agreement .... ). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+            "problem": "This license has different variants/versions (Unicode Terms of Use, Unicode-3.0, Unicode Inc License Agreement .... ). Without a version number clearly distinguishing the version it is impossible to determine which of the versions is meant."
         },
         "Zope Public License": {
             "aliases": [
@@ -324,7 +324,7 @@
                 "License :: OSI Approved :: Zope Public License",
                 "Zope-Public-License"
             ],
-            "problem": "This license has different versions (1.0, 1.1, 2.0 and 2.1). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+            "problem": "This license has different versions (1.0, 1.1, 2.0 and 2.1). Without a version number clearly distinguishing the version it is impossible to determine which of the versions is meant."
         }
     }
 }
