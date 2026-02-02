@@ -50,6 +50,8 @@
       "mit/x11",
       "x/mit",
       "MIT (http://mootools.net/license.txt)",
-      "c-ares license"
+      "c-ares license",
+      "Expat/MIT",
+      "LicenseRef-C-Ares"
     ]
 }
