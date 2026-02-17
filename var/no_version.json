@@ -44,7 +44,8 @@
           "GPL license",
           "GNU General Public License (GPL)",
           "GNU general public license",
-          "GNU General Public License _GNU General Public License_"
+          "GNU General Public License _GNU General Public License_",
+          "gpl-unspecified"
         ],
         "licenses": ["GPL-1.0-only", "GPL-2.0-only", "GPL-3.0-only"]
       }
