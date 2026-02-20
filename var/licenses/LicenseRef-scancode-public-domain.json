@@ -19,7 +19,9 @@
       "PublicDomain",
       "License :: Public Domain",
     "Public Domain Dedication",
-    "licenseref-fedora-public-domain"
+    "licenseref-fedora-public-domain",
+    "pubic-domain",
+    "publicdomain"
   ],
   "compatibility_as": "CC0-1.0"
 }
