@@ -75,7 +75,10 @@
               "GPL-2.0-only WITH Linux-syscall-note-exception",
               "GPL-2 with Linux-syscall-note exception",
               "GPL-2.0-only WITH Linux Syscall Note",
-              "gpl-2.0-with-linux-syscall-note"
+              "gpl-2.0-with-linux-syscall-note",
+              "GPL-2.0-only WITH linux-syscall-note",
+              "GPL-2.0-only WITH linux-syscall-note exception",
+              "GPL-2withLinux-syscall-noteexception"
             ],
             "compatibility_as": "GPL-2.0-only WITH Classpath-exception-2.0"
         },
@@ -111,7 +114,7 @@
                 "GPL-3--libtool-exception"
             ]
         },
-        {
+      {
             "spdxid": "GPL-3.0-only WITH GCC-exception-3.1",
             "aliases": [
                 "GPL-3.0-with-GCC-exception",
