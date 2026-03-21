@@ -154,6 +154,13 @@
             "aliases": [
                 "GPL-3+-libtool-exception"
             ]
+        },
+        {
+            "spdxid": "LGPL-3.0-only WITH LGPL-3.0-linking-exception",
+            "aliases": [
+              "LGPL-3.0-only WITH LGPL-3.0-linking exception",
+              "LGPL-3.0-only WITH LGPL-3.0-linking-exception"
+            ]
         }
     ]
 }
