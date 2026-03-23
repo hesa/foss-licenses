@@ -1,0 +1,20 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Tatu Ylonen License",
+  "scancode_key": "tatu-ylonen",
+  "spdxid": "SSH-short",
+  "aliases": [
+   "scancode://tatu-ylonen",
+   "SSH-short",
+   "SSH short notice",
+   "Tatu Ylonen License",
+   "Tatu Ylonen Licence",
+   "Tatu Ylonen's licence",
+   "Tatu Ylonen's Licence",
+   "Tatu Ylonen's original licence",
+   "scancode:tatu-ylonen"
+  ]
+}
