@@ -21,7 +21,11 @@
     "Public Domain Dedication",
     "licenseref-fedora-public-domain",
     "pubic-domain",
-    "publicdomain"
+    "publicdomain",
+    "pd",
+    "PD",
+    "pd-debian",
+    "PD-debian"
   ],
   "compatibility_as": "CC0-1.0"
 }
