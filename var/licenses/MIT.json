@@ -53,6 +53,7 @@
       "c-ares license",
       "Expat/MIT",
       "LicenseRef-C-Ares",
-      "expat~x"
+      "expat~x",
+      "LicenseRef-c-Ares"
     ]
 }
