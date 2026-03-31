@@ -121,6 +121,13 @@
         ]
       },
       {
+        "spdxid": "GPL-3.0-r-later WITH Autoconf-exception-3.0",
+        "aliases": [
+          "gpl-3+-autoconf-exception",
+          "GPL-3+-autoconf-exception"
+        ]
+      },
+      {
             "spdxid": "GPL-3.0-only WITH GCC-exception-3.1",
             "aliases": [
                 "GPL-3.0-with-GCC-exception",
