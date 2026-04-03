@@ -125,7 +125,8 @@
         "aliases": [
           "gpl-3+-autoconf-exception",
           "GPL-3+-autoconf-exception",
-          "GPL3+withautoconfexception"
+          "GPL3+withautoconfexception",
+          "GPL-3.0-or-later WITH AutoConf exception"
         ]
       },
       {
