@@ -16,6 +16,8 @@
         "X11-Style (Open Group)",
         "mit-open-group",
         "scancode:mit-open-group",
-        "x11-opengroup"
+      "x11-opengroup",
+      "opengroup-mit",
+      "OpenGroup-MIT"
     ]
 }
