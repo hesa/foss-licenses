@@ -1,0 +1,12 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Python ldap License",
+  "scancode_key": "python-ldap",
+  "spdxid": "python-ldap",
+  "aliases": [
+    "Python ldap License"
+  ]
+}
