@@ -307,7 +307,8 @@
               "PYTHON SOFTWARE FOUNDATION LICENSE",
               "python software licence",
               "psfl",
-              "PSF License Agreement"
+              "PSF License Agreement",
+              "Python License"
             ],
             "problem": "This license has different versions (2.0 and 2.0.1). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
