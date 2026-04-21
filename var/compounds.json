@@ -14,22 +14,13 @@
       {
         "spdxid": "Apache-2.0 WITH LLVM-exception",
         "aliases": [
-          "Apache-2.0 WITH LLVM Exceptions",
           "Apache-2.0 WITH LLVM Exception",
-          "Apache-2.0 WITH LLVM exception",
           "Apache-2.0 WITH LLVM-exception",
-          "Apache-2.0 WITH llvm-exception"
-        ]
-      }
-      ,
-      {
-            "spdxid": "Apache-2.0 WITH LLVM-exception",
-            "aliases": [
+          "Apache-2.0 WITH llvm-exception",
                 "Apache-2.0-WITH-LLVM-exception",
                 "Apache-2.0-with-LLVM-exception",
                 "APACHE-2-LLVM-EXCEPTIONS",
                 "Apache-2.0 WITH LLVM exceptions",
-                "Apache-2.0 WITH LLVM-exception",
                 "Apache 2.0 w/LLVM",
               "Apache 2.0 w/LLVM Exception",
               "Apache License-2.0-with-LLVM-exception",
