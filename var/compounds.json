@@ -72,6 +72,15 @@
             ]
         },
         {
+            "spdxid": "GPL-2.0-or-later WITH Libtool-exception",
+          "aliases": [
+            "GPL-2.0-or-later WITH libtool exception",
+            "GPL-2.0-or-later WITH LibTool exception",
+            "gpl-2+-libtool-exception",
+            "GPL-2+withlibtoolexception"
+            ]
+        },
+        {
             "spdxid": "GPL-2.0-only WITH Linux-syscall-note",
             "aliases": [
               "GPL-2.0-only WITH Linux-syscall-note-exception",
