@@ -150,7 +150,14 @@
           "gpl-3+-autoconf-exception",
           "GPL-3+-autoconf-exception",
           "GPL3+withautoconfexception",
-          "GPL-3.0-or-later WITH AutoConf exception"
+          "GPL-3.0-or-later WITH AutoConf exception",
+          "GPL-3.0-or-later WITH autoconf-data exception",
+          "GPL-3.0-or-later WITH Autoconf-data exception",
+          "GPL-3.0-or-later WITH autoconf exception",
+          "GPL-3.0-or-later WITH Autoconf exception",
+          "GPL-3.0-or-later-WITH-Autoconf-exception-macro",
+          "GPL-3.0-or-later WITH autoconf generic exception",
+          "GPL-3.0-or-later WITH Autoconf Macros exception"
         ]
       },
       {
