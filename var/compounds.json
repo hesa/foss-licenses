@@ -184,7 +184,7 @@
             "spdxid": "GPL-2.0-only WITH GCC-exception-2.0",
             "aliases": [
               "GPL-2.0-only WITH GCC exception",
-              "GPL-2.0-only WITH GCC Runtime Library exception",
+              "GPL-2.0-only WITH GCC Runtime Library exception"
             ],
             "compatibility_as": "0BSD"
         },
