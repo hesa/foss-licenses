@@ -77,7 +77,9 @@
             "GPL-2.0-or-later WITH libtool exception",
             "GPL-2.0-or-later WITH LibTool exception",
             "gpl-2+-libtool-exception",
-            "GPL-2+withlibtoolexception"
+            "GPL-2+withlibtoolexception",
+            "GPL-2.0-or-later WITH libtool exception",
+            "GPL-2.0-or-later WITH LibTool exception"
             ]
         },
         {
