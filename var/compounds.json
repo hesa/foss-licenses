@@ -132,7 +132,10 @@
         "spdxid": "GPL-2.0-only WITH Autoconf-exception-2.0",
         "aliases": [
           "GPL-2.0-with-autoconf-exception+",
-          "GPL-2.0-with-autoconf-exception"
+          "GPL-2.0-with-autoconf-exception",
+          "gpl-2.0-with-autoconf-exception+",
+          "GPL-2.0-with-autoconf-exception",
+          "GPL-2.0-with-autoconf-exception+"
         ]
       },
       {
