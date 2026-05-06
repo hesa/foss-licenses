@@ -129,7 +129,8 @@
           "gpl-2+-autoconf",
           "gpl-2+-autoconf-archive",
           "gpl-2+-autoconf-exception",
-          "GPL-2+-autoconf-exception"
+          "GPL-2+-autoconf-exception",
+          "GPL2+-with-Autoconf-Macros-exception"
         ]
       },
       {
