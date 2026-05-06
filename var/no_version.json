@@ -25,7 +25,8 @@
           "lesser general public license",
           "Lesser GPL",
           "GNU Lesser General Public",
-          "GNU/GNU Lesser"
+          "GNU/GNU Lesser",
+          "GNU GENERAL PUBLIC LICENSE _GPL_"
         ],
         "licenses": ["LGPL-2.0-only", "LGPL-2.1-only", "LGPL-3.0-only"]
       },

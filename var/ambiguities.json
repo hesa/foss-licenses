@@ -43,7 +43,8 @@
               "LICENSE-APACHE",
               "Apache other",
               "APACHE",
-              "APACHE SOFTWARE LICENSE"
+              "APACHE SOFTWARE LICENSE",
+              "OSI-Approved----Apache-Software-License"
             ],
             "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -62,7 +63,11 @@
                 "Artistic",
               "Artistic License (Perl)",
               "Artistc",
-              "ARTISTIC LICENSE"
+              "ARTISTIC LICENSE",
+              "artistic-dist",
+              "Artistic-dist",
+              "Artistic License-dist"
+              
             ],
             "problem": "This license has different version (1.0, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
         },
@@ -77,6 +82,12 @@
                 "Boost-Software-License"
             ],
             "problem": "There are at least two versions of the Boost license (Original Boost and BSL-1.0). Without the version/variant of the license it is not possible to determine which of the versions is meant."
+        },
+        "Bison exception": {
+          "aliases": [
+            "bison exception"
+            ],
+            "problem": "There are at least two versions of the Boost exception (Bison-exception-1.24 and Bison exception 2.2). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
         "BSD": {
             "aliases": [
@@ -300,7 +311,10 @@
               "python",
               "Python license",
               "PYTHON SOFTWARE FOUNDATION LICENSE",
-              "python software licence"
+              "python software licence",
+              "psfl",
+              "PSF License Agreement",
+              "Python License"
             ],
             "problem": "This license has different versions (2.0 and 2.0.1). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
@@ -313,7 +327,9 @@
         },
         "Unicode License": {
             "aliases": [
-                "Unicode"
+              "Unicode",
+              "unicode-data",
+              "Unicode-data"
             ],
             "problem": "This license has different variants/versions (Unicode Terms of Use, Unicode-3.0, Unicode Inc License Agreement .... ). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
