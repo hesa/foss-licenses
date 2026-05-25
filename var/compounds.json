@@ -190,6 +190,19 @@
             ],
             "compatibility_as": "0BSD"
         },
+      {
+            "spdxid": "GPL-2.0-only WITH Font-exception-2.0",
+        "aliases": [
+          "GPL-2.0-only WITH font exception"
+            ]
+        },
+      {
+            "spdxid": "GPL-2.0-or-later WITH Font-exception-2.0",
+        "aliases": [
+          "GPL-2.0-or-later WITH font exception",
+          "GPL-2.0-or-later WITH Font exception"
+            ]
+        },
         {
             "spdxid": "GPL-3.0-or-later WITH GCC-exception-3.1",
             "aliases": [
@@ -208,7 +221,7 @@
           "aliases": [
             "LGPL-2.1-or-later WITH openssl exception",
             "LGPL-2.1-or-later WITH OpenSSL exception"
-            ]
+          ]
         },
         {
             "spdxid": "LGPL-3.0-only WITH LGPL-3.0-linking-exception",
