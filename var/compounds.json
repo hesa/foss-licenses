@@ -226,7 +226,8 @@
             "spdxid": "LGPL-2.1-or-later WITH LicenseRef-scancode-openssl-exception-lgpl2.0plus",
           "aliases": [
             "LGPL-2.1-or-later WITH openssl exception",
-            "LGPL-2.1-or-later WITH OpenSSL exception"
+            "LGPL-2.1-or-later WITH OpenSSL exception",
+            "LGPL-2.1+withOpenSSLexception"
           ]
         },
         {
