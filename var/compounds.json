@@ -143,7 +143,10 @@
         "spdxid": "GPL-2.0-or-later WITH GCC-exception-2.0",
         "aliases": [
           "GPL-2.0-or-later WITH gnu-compiler-exception",
-          "GPL-2.0-or-later WITH gcc-exception-2.0"
+          "GPL-2.0-or-later WITH gcc-exception-2.0",
+          "GPL-2+withLibraryexception",
+          "gpl-2+-with-link-exception",
+          "GPL-2+-with-link-exception"
         ]
       },
       {
