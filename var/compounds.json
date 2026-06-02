@@ -12,6 +12,12 @@
         ]
       },
       {
+        "spdxid": "AGPL-3.0-only WITH Font-exception-2.0",
+        "aliases": [
+          "AGPL-3.0-or-later WITH font exception"
+        ]
+      },
+      {
         "spdxid": "Apache-2.0 WITH LLVM-exception",
         "aliases": [
           "Apache-2.0 WITH LLVM Exception",
