@@ -10,6 +10,8 @@
    "scancode://openssh",
    "SSH OpenSSH license",
    "OpenSSH License",
-   "SSH-OpenSSH"
+    "SSH-OpenSSH",
+    "OpenSSH",
+    "openssh"
   ]
 }
