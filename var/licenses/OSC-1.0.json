@@ -1,0 +1,12 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "OSC License 1.0",
+    "scancode_key": "osc-1.0",
+    "spdxid": "OSC-1.0",
+    "aliases": [
+        "osc-1-0"
+    ]
+}
