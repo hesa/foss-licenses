@@ -7,7 +7,6 @@
     "scancode_key": "artistic-perl-1.0",
     "spdxid": "Artistic-1.0-Perl",
     "aliases": [
-        "scancode:artistic-perl-1.0",
         "Artistic 1.0 License Perl",
         "Artistic 1.0 License, Version Perl",
         "Artistic 1.0, Perl",
@@ -21,6 +20,8 @@
         "Artistic-1.0-Perl",
         "Artistic-Perl-1.0",
         "scancode://artistic-perl-1.0",
-        "artistic-1-0-perl"
+        "scancode:artistic-perl-1.0",
+      "Artistic License 1.0 Perl",
+      "artistic-1-0-perl"
     ]
 }
