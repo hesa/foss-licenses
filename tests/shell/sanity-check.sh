@@ -8,6 +8,7 @@
 THIS_FILE=${BASH_SOURCE[0]}
 RET=0
 LICENSE_ERRORS=""
+ADD_TESTS=""
 set -o pipefail
 
 check_test_case()
@@ -21,7 +22,8 @@ check_test_case()
         echo -n "$LICENSE_NAME: "
         if [ $TEST_EXIST -eq 0 ]
         then
-            LICENSE_ERRORS="$LICENSE_NAME is missing test case."
+            LICENSE_ERRORS="$LICENSE_ERRORS\n$LICENSE_NAME is missing test case"
+            ADD_TESTS="$ADD_TESTS\ncheck_presence $LICENSE_NAME  ' -i -e $LICENSE_NAME*'   '' "
             echo missing
             RET=1
         else
@@ -175,7 +177,7 @@ check_presence Bitstream-Vera " -i -e bitstream " ""
 check_presence blessing " -i -e blessing " ""
 check_presence BlueOak-1.0.0  " -i -e 1 -e model" " -e 2"
 check_presence Bootloader-exception " -i bootloader" ""
-check_presence BSL-1.0                            " -e BSL-1 -e BSL1 -e 1 " " -i -e original "
+check_presence BSL-1.0                            " -e BSL-1 -e BSL1 -e 1 " " -i -e original"
 
 
 check_presence LicenseRef-scancode-khronos " -i -e khronos" ""
@@ -195,8 +197,10 @@ check_presence BSD-3-Clause "$BSD3_PRESENT" "$ZERO_BSD_PRESENT  -i -e two -e sim
 check_presence BSD-3-Clause-acpica " -i -e intel" "$ZERO_BSD_PRESENT  -i -e two -e simplified -e freebsd "
 check_presence BSD-3-Clause-Attribution " -i -e ack -e attribution" " -e 0 -e 1 -e 2 -e 4"
 check_presence BSD-3-Clause-Clear " -i -e clear" " -e 0 -e 1 -e 2 -e 4"
+check_presence BSD-3-Clause-LBNL  ' -i -e LBNL -e lawrence'   '' 
 check_presence BSD-3-Clause-Modification " -i -e modification -e repoze " " -e 0 -e 1 -e 2 -e 4"
 check_presence BSD-3-Clause-No-Nuclear-Warranty " -i -e nuclear" " -e 0 -e 1 -e 2 -e 4"
+check_presence BSD-3-Clause-Open-MPI  ' -i -e MPI'   '' 
 check_presence BSD-4-Clause "$BSD4_PRESENT" " $ZERO_BSD_PRESENT $BSD2_PRESENT $BSD3_PRESENT"
 check_presence BSD-4-Clause-UC " -i -e university -e UC -e california " " -e 1 -e 2 -e 3"
 check_presence BSD-4.3TAHOE " -i -e bsla" ""
@@ -310,7 +314,7 @@ check_presence libtiff " -i -e tiff  " ""
 check_presence Libtool-exception " -i -e libtool  " ""
 check_presence LiLiQ-P-1.1 " -i -e \"liliq-p\"  -e \"liliq p\" -e permissive "
 check_presence LiLiQ-R-1.1 " -i -e \"liliq-r\"  -e \"liliq r\" -e Réciprocité "
-check_presence Linux-OpenIB "" ""
+check_presence Linux-OpenIB " -e -i openib" ""
 check_presence Linux-syscall-note " -i -e syscall  " ""
 check_presence LLVM-exception " -i -e llvm  " ""
 
@@ -379,7 +383,7 @@ check_presence TCP-wrappers " -i -e tcp-wrappers -e 'tcp wrappers'" ""
 check_presence TU-Berlin-1.0 " -e 1 -e berlin" " -e 2"
 check_presence TU-Berlin-2.0 " -e 2" " -e 1"
 
-check_presence Unicode-3.0 " -i -e 'unicode-[v]3' -e 'unicode license v3' " ""
+check_presence Unicode-3.0 " -i -e 'unicode-[v]3' -e 'unicode license v3' -e '3\-'" ""
 check_presence Unicode-DFS-2016 " -e 2016 -e UNICODE " " -e 2015"
 check_presence Unicode-DFS-2015 " -e 2015 -e UNICODE " " -e 2016"
 check_presence Unicode-TOU " -i -e terms -e tou" ""
@@ -416,7 +420,8 @@ if [ $RET -ne 0 ]
 then
     echo ""
     echo "License errors"
-    echo "$LICENSE_ERRORS"
+    printf "$LICENSE_ERRORS"
+    printf "$ADD_TESTS" | sort
     echo 
 fi
 
