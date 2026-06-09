@@ -208,6 +208,8 @@ check_presence BSD-Source-Code " -i -e source -e code " " -e 1 -e 2 -e 3"
 check_presence BUSL-1.1 " -i -e busl -e business -e businnes -e bsl-1.1 " "-i -e 1.0"
 check_presence bzip2-1.0.6 " -i -e 1.0.6 -e 2010  -e bzip2 " " 1.1"
 
+check_presence CAL-1.0  ' -i -e CAL-1 -e Cryptographic'   '' 
+
 check_presence CC0-1.0 " -e 1 -e 0 " " -e [2-9]"
 check_presence CC-PDDC " -i -e pd -e dedication  " " -e [1-9]"
 check_presence CC-BY-3.0 " -e 3 " " -e 4"
@@ -223,6 +225,10 @@ check_presence CECILL-B " -i -e cecill-b -e cecill\ b" " -e -A -e -C"
 check_presence CECILL-C " -i -e cecill-c -e cecill\ c" " -e -A -e -B"
 check_presence CECILL-1.1 " -i -e cecill-1.1 -e 1.1" " -e -A -e -B -e -C -e 2.1"
 check_presence CECILL-2.1 " -i -e cecill-2.1 -e 2.1" " -e -A -e -B -e -C -e 1.1"
+
+check_presence CERN-OHL-P-2.0  ' -i -e CERN-OHL  -e "CERN Open" ' ' -e S -e W' 
+check_presence CERN-OHL-S-2.0  ' -i -e CERN-OHL  -e "CERN Open" ' ' -e P -e W' 
+check_presence CERN-OHL-W-2.0  ' -i -e CERN-OHL  -e "CERN Open" ' ' -e P -e S' 
 
 check_presence CNRI-Python " -i -e CNRI  " ""
 check_presence python-ldap " -i -e ldap" ""
