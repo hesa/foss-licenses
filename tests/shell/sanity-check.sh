@@ -164,9 +164,9 @@ check_presence Apache-2.0 " -e 2" "-e 1"
 
 check_presence APSL-2.0 " -e 2" "-e 1 -e [3-9]"
 
-check_presence Artistic-1.0 " -e 1.0 -e 1" "-e 2 "
+check_presence Artistic-1.0 " -e 1.0 -e 1" " -i -e 2 -e perl"
 check_presence Artistic-1.0-Perl " -i -e Perl" "-e 2 "
-check_presence Artistic-2.0 " -e 2 -e 2.0 " "-e 1"
+check_presence Artistic-2.0 " -e 2 -e 2.0 " " -i -e 1 -e perl"
 
 check_presence Autoconf-exception-2.0 " -e autoconf " " -e 3"
 check_presence Autoconf-exception-3.0 " -e autoconf " " -e 2"
