@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "IPA Font License Agreement v1.0",
+    "scancode_key": "ipa-font",
+    "spdxid": "IPA",
+    "aliases": [
+        "IPA",
+        "IPA Font License",
+        "IPA Font License 1.0",
+        "IPA License",
+        "scancode://ipa-font",
+        "IPA Font License Agreement v1.0",
+        "IPA LICENSE",
+        "osi:IPA",
+        "scancode:ipa-font",
+        "ipa"
+    ]
+}
