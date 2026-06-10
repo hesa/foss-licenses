@@ -47,7 +47,7 @@ check_file_presence()
             echo "FAIL: $LICENSE_FILE missing"
             RET=$(( $RET + 1 ))
             RESULT=" FAIL"
-            LICENSE_ERRORS="$LICENSE_ERRORS $LICENSE_FILE missing, "
+            LICENSE_ERRORS="$LICENSE_ERRORS\n$LICENSE_FILE missing, "
         fi
         jq . $lf > /dev/null
         if [ $? -ne 0 ]
@@ -55,7 +55,7 @@ check_file_presence()
             echo "FAIL: $lf not in JSON format"
             RET=$(( $RET + 1 ))
             RESULT=" FAIL"
-            LICENSE_ERRORS="$LICENSE_ERRORS $lf not in JSON format, "
+            LICENSE_ERRORS="$LICENSE_ERRORS\n$lf not in JSON format, "
         fi
     done
     
@@ -68,7 +68,7 @@ check_file_presence()
            echo "FAIL $lf file missing"
            RET=$(( $RET + 1 ))
            RESULT=" FAIL"
-           LICENSE_ERRORS="$LICENSE_ERRORS $lf file missing, "
+           LICENSE_ERRORS="$LICENSE_ERRORS\n$lf file missing, "
        fi
     done
     echo "$RESULT"
@@ -100,7 +100,7 @@ check_presence()
         echo " --------------------------"
         RET=$(( $RET + 1 ))
         _RET="FAIL"
-        LICENSE_ERRORS="$LICENSE_ERRORS  $REG_EXP_PRESENCE not present in $FILE"
+        LICENSE_ERRORS="$LICENSE_ERRORS\n$REG_EXP_PRESENCE not present in $FILE"
         exit
     fi
 
@@ -117,7 +117,7 @@ check_presence()
             echo " --------------------------"
             RET=$(( $RET + 1 ))
             _RET="FAIL"
-            LICENSE_ERRORS="$LICENSE_ERRORS  \"$REG_EXP_UNPRESENCE\" incorrectly found in \"$FILE\""
+            LICENSE_ERRORS="$LICENSE_ERRORS\n\"$REG_EXP_UNPRESENCE\" incorrectly found in \"$FILE\""
         fi
     fi
     
@@ -186,6 +186,7 @@ check_presence LicenseRef-scancode-openssl-exception-gpl-2.0-plus " -i -e openss
 check_presence LicenseRef-scancode-openssl-exception-lgpl2.0plus " -i -e openssl" ""
 check_presence LicenseRef-scancode-boost-original " -i -e original "        " -e BSL-1 -e BSL1 -e 1 "  
 check_presence LicenseRef-scancode-ssleay " -i -e leay "        " -e openssl"  
+check_presence LicenseRef-scancode-lanl-bsd-3-variant  ' -i -e lanl -e alamos'   ' -e 2 -e 1' 
 
 check_presence 0BSD "$ZERO_BSD_PRESENT" "$BSD3_PRESENT $BSD2_PRESENT "
 check_presence Bitstream-Charter " -i -e bitstream" " -i -e vera"
@@ -232,6 +233,7 @@ check_presence CERN-OHL-W-2.0  ' -i -e CERN-OHL  -e "CERN Open" ' ' -e P -e S'
 
 check_presence CNRI-Python " -i -e CNRI  " ""
 check_presence python-ldap " -i -e ldap" ""
+check_presence CPAL-1.0  ' -i -e CPAL-1 -e \"Common Public Attribution\" '   '' 
 check_presence CPL-1.0 " -e 1.0  -e 1 " " -e 0.5 -e 2"
 
 check_presence Classpath-exception-2.0 " -i -e classpath " " -e 1"
@@ -253,6 +255,7 @@ check_presence EUPL-1.0 " -e 1.0 -e 1" " -e 2"
 check_presence EUPL-1.1 " -e 1.1 -e 1" " -e 2"
 check_presence EUPL-1.2 " -e 1.2 -e 1" " -e 0"
 
+check_presence Font-exception-2.0  ' -i -e Font-exception-2.0 -e font-exception-gpl'    ' -e 1' 
 check_presence FSFAP    " -i -e FSFAP -e \"All Permissive\"  -e \"All-Permissive\" -e fsf-ap"       " -i -e FUL"
 check_presence FSFUL    " -i  -e FSFUL -e unlimited -e fsf-free "      " -e FSFAP -e FSFFULLR -e FSFULLRWD "
 check_presence FSFULLR  " -i -e FSFULLR -e unlimited -e retention "    " -e FSFAP -e FSFULLRWD "
@@ -277,10 +280,12 @@ check_presence HPND-Intel " -i -e intel" ""
 check_presence ICU " -i -e icu " ""
 check_presence IJG " -i -e ijg -e independent -e jpeg " " -e short"
 check_presence IJG-short " -i -e ijg -e independent -e jpeg  " ""
+check_presence IPA  ' -i -e IPA'   ' -e 2' 
 check_presence IPL-1.0 " -i -e ipl -e ibm   " ""
 check_presence Intel " -i -e intel " " -e 0 -e 1 -e 2 -e 3 -e 4 "
 check_presence ISC " -i -e isc  " ""
 
+check_presence Jam  ' -i -e Jam'   '' 
 check_presence JasPer-2.0 " -i -e jasper" ""
 check_presence JSON " -i -e JSON  " ""
 
@@ -320,9 +325,12 @@ check_presence libtiff " -i -e tiff  " ""
 check_presence Libtool-exception " -i -e libtool  " ""
 check_presence LiLiQ-P-1.1 " -i -e \"liliq-p\"  -e \"liliq p\" -e permissive "
 check_presence LiLiQ-R-1.1 " -i -e \"liliq-r\"  -e \"liliq r\" -e Réciprocité "
+check_presence LiLiQ-Rplus-1.1  ' -i -e LiLiQ-Rplus-1.1 -e \"License Libre\" '   ' -e 2 ' 
 check_presence Linux-OpenIB " -e -i openib" ""
 check_presence Linux-syscall-note " -i -e syscall  " ""
 check_presence LLVM-exception " -i -e llvm  " ""
+
+check_presence LPPL-1.3c  ' -i -e LPPL -e Latex'   ' -e 2 ' 
 
 check_presence MirOS " -i -e MirOS -e mir-os" ""
 
@@ -341,19 +349,25 @@ check_presence MPL-1.1 " -e 1.1" "-e 2 -e 1.0"
 check_presence MPL-2.0 " -e 2" " -e 1"
 check_presence MPL-2.0-no-copyleft-exception " -i -e 2 -e 'no[ \-]copyleft'" "-e 1"
 
-check_presence MS-PL " -i -e ms -e microsoft " " -i -e mpl"
+check_presence MS-PL " -i -e ms -e 'microsoft, pl'  -e 'microsoft public license' " " -i -e mpl"
+check_presence MS-RL  ' -i -e MS-RL -e "MS License,[ Va-z]* RL" -e "MS, Version RL"'   '' 
 
 check_presence MulanPSL-1.0 " -e 1" " -e 2"
 check_presence MulanPSL-2.0 " -e 2" " -e 1"
+check_presence Multics  ' -i -e Multics'   ''
 
 check_presence NAIST-2003 " -i -e naist -e nara " ""
 check_presence NASA-1.3 " -i -e nasa " ""
+check_presence Naumen  ' -i -e Naumen'   '' 
 check_presence NCSA " -i -e ncsa -e illinois " ""
 check_presence NGPL " -i -e ngpl -e nethack" ""
 check_presence Nokia " -i -e nokia -e nokos " ""
+check_presence NPOSL-3.0  ' -i -e NPOSL -e "Non[ \-]*Profit" -e nosl' '-e "[1-2]" -e "[4-9]" ' 
 check_presence NTP " -i -e ntp -e network " ""
 
 check_presence OCaml-LGPL-linking-exception " -i -e ocaml" ""
+check_presence OCLC-2.0  ' -i -e OCLC'   ' -e 1' 
+check_presence OLFL-1.3  ' -i -e OLFL'   ' -e 2' 
 check_presence ODC-By-1.0 " -i -e 1.0 -e odc" ""
 check_presence OFL-1.0 " -e 1.0 " " -e 1.1"
 check_presence OFL-1.1 " -e 1.1" " -e 1.0"
@@ -361,14 +375,25 @@ check_presence OGTSL " -i -e ogtsl -e Open\ Group -e ogts\ license -e opengroup"
 check_presence OLDAP-2.8 " -i -e oldap -e open[\ ]*ldap" ""
 check_presence OML " -i -e oml -e market -e fastcgi -e OM\ License" ""
 check_presence OpenSSL " -i -e openssl " ""
-check_presence OSL-2.1 " -i -e Open\ Software -e OSL-2 -e OSL\ 2" ""
-check_presence OSL-3.0 " -i -e Open\ Software -e OSL-3 -e OSL\ 3" ""
+check_presence OSC-1.0  ' -i -e OSC-1.0'   '' 
+check_presence OSET-PL-2.1  ' -i -e OSET -e OPL'   '' 
+check_presence OSL-1.0 " -i -e Open\ Software -e OSL-1 -e OSL\ 1 -e 'OSL[\, a-zA-Z ]*1.0'" " -e 2 -e 3"
+check_presence OSL-2.1 " -i -e Open\ Software -e OSL-2 -e OSL\ 2" " -e 3"
+check_presence OSL-3.0 " -i -e Open\ Software -e OSL-3 -e OSL\ 3" " -e 1 -e 2"
 
+check_presence PHP-3.0  ' -i -e PHP[ ]License[, a-zA-Z]3.0'   ' -e 1' 
+check_presence PHP-3.01 ' -i -e PHP[ ]License[, a-zA-Z]3.01'   ' -e "3.0 " '
 check_presence Plexus " -i -e plexus -e classworlds " ""
 check_presence PostgreSQL " -i -e postgresql " ""
 check_presence Python-2.0.1 " -i -e Python " ""
 
+check_presence QPL-1.0  ' -i -e QPL[ \-,a-zA-Z]1.0 -e "Q Public License[ ]*1.0"'   ' -e 2' 
+
 check_presence romic-exception " -i -e romic " ""
+check_presence RPL-1.1  ' -i -e RPL[ ,a-zA-Z]*1.1 -e "Reciprocal Public License[ ,a-zA-Z]*1.1"'   ' -e' 
+check_presence RPL-1.5   ' -i -e RPL[ ,a-zA-Z]*1.4 -e "Reciprocal Public License[ ,a-zA-Z]*1.5"'   '' 
+check_presence RPSL-1.0  ' -i -e RPSL -e "RealNetworks Public Source License"'   '' 
+
 check_presence RSA-MD " -i -e RSA " ""
 check_presence RSCPL " -i -e RSCPL -e Ricoh " ""
 
@@ -378,6 +403,8 @@ check_presence SGI-B-2.0 " -i -e SGI " ""
 check_presence Sleepycat " -i -e sleepycat -e Berkeley " ""
 check_presence SSH-OpenSSH " -i -e openssh" " -i -e ylonen"
 check_presence SSH-short " -i -e ylonen -e ssh-short -e ssh\ short" ""
+check_presence SimPL-2.0  ' -i -e SimPL -e "simple public"'   '' 
+check_presence SISSL  ' -i -e SISSL -e "Sun Industry" -e "sun-issl"'   '' 
 check_presence SPL-1.0 " -i -e sun -e spl" ""
 check_presence SSPL-1.0 " -i -e SSPL -e server\ side" ""
 check_presence SunPro " -i -e SunPro " ""
@@ -389,6 +416,7 @@ check_presence TCP-wrappers " -i -e tcp-wrappers -e 'tcp wrappers'" ""
 check_presence TU-Berlin-1.0 " -e 1 -e berlin" " -e 2"
 check_presence TU-Berlin-2.0 " -e 2" " -e 1"
 
+check_presence UCL-1.0  ' -i -e UCL -e Upstream'   '' 
 check_presence Unicode-3.0 " -i -e 'unicode-[v]3' -e 'unicode license v3' -e '3\-'" ""
 check_presence Unicode-DFS-2016 " -e 2016 -e UNICODE " " -e 2015"
 check_presence Unicode-DFS-2015 " -e 2015 -e UNICODE " " -e 2016"
@@ -403,7 +431,11 @@ check_presence VSL-1.0 " -i -e VSL -e Vovida" " -e 2"
 check_presence W3C " -i -e w3c -e w3.org " " -e 1998 -e 2015 "
 check_presence W3C-19980720 " 1998 " " -e 2015 "
 check_presence W3C-20150513 " -e 2015 -e Document " " -e 1998 "
+check_presence Watcom-1.0  ' -i -e Watcom -e sybase'   '' 
+check_presence WordNet  ' -i -e WordNet'   '' 
 check_presence WTFPL " -i -e WTFPL -e what -e wtf\ p" ""
+check_presence wxWindows  ' -i -e wxWindows'   '' 
+
 check_presence X11 " -i -e 11 -e 'consortium' -e 'X ' -e 'X/MIT' -e MIT-X -e 'MIT/X'" "" 
 check_presence X11-distribute-modifications-variant " -i -e modifications -e fsf" ""
 check_presence x11-keith-packard " -i -e packard -e hpnd " ""
@@ -425,7 +457,7 @@ check_presence ZPL-2.1 " -e 2.1" " -e 1.1 -e 2.0"
 if [ $RET -ne 0 ]
 then
     echo ""
-    echo "License errors"
+    echo -n "License errors:"
     printf "$LICENSE_ERRORS"
     printf "$ADD_TESTS" | sort
     echo 
