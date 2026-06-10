@@ -15,6 +15,7 @@
         "scancode://nokos-1.0a",
         "Nokia License",
         "NOKIA License",
+        "NOKIA",
         "NOKIA LICENSE",
         "Nokia Open Source License",
         "NOKIA Open Source License",
@@ -22,6 +23,7 @@
         "NOKOS",
         "osi:nokia",
         "scancode:nokos-1.0a",
+        "nokos-1.0a",
         "License :: Nokia Open Source License (NOKOS)"
     ]
 }

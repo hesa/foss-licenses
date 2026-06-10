@@ -14,6 +14,7 @@
         "scancode://ricoh-1.0",
         "The Ricoh Source Code Public License",
         "osi:RSCPL",
-        "scancode:ricoh-1.0"
+        "scancode:ricoh-1.0",
+        "rscpl"
     ]
 }
