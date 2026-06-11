@@ -325,7 +325,24 @@
             ],
             "problem": "This license has different versions (2.0 and 2.0.1). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
-        "Sun Industry Standards Source License": {
+      "Q Public License": {
+        "aliases": [
+          "QPL"
+        ],
+        "problem": "This license has different versions and/or variants (1.0 and INRIA-2004). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+      },
+      "Reciprocal Public License": {
+        "aliases": [
+          "RPL"
+        ],
+        "problem": "This license has different versions (1.1 and 1.5). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+      },
+      "Simple Public License": {
+        "aliases": [
+        ],
+        "problem": "This license has different versions (1.1 and 2.0). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+      },
+      "Sun Industry Standards Source License": {
             "aliases": [
                 "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)",
               "SISSL"

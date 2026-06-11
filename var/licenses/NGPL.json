@@ -16,6 +16,7 @@
         "http://www.nethack.org/common/license.html",
         "NETHACK GENERAL PUBLIC LICENSE",
         "osi:NGPL",
-        "scancode:ngpl"
+        "scancode:ngpl",
+        "ngpl"
     ]
 }

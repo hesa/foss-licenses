@@ -15,6 +15,7 @@
         "OGTS license",
         "OGTSL license",
         "osi:OGTSL",
-        "scancode:opengroup"
+        "scancode:opengroup",
+        "ogtsl"
     ]
 }

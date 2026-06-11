@@ -4,7 +4,7 @@
         "comment": ""
     },
     "name": "MIT Old Style no advertising",
-    "scancode_key": "ntpl", 
+    "scancode_key": "ntpl",
     "spdxid": "NTP",
     "aliases": [
         "NTP",
@@ -14,6 +14,7 @@
         "scancode:network-time-protocol",
         "scancode:ntpl",
         "osi:NTP",
-        "ntpl"
+        "ntpl",
+        "ntp"
     ]
 }
