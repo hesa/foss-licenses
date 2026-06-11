@@ -7,6 +7,7 @@
     "scancode_key": "wxwindows",
     "spdxid": "wxWindows",
     "aliases": [
-        "wxwindows"
+        "wxwindows",
+        "The wxWindows Library Licence"
     ]
 }
