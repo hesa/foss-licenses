@@ -51,6 +51,7 @@ check_foss_licenses_helper()
 {
     ALIAS="$1"
     EXPECTED="$2"
+    NAME="$3"
 
     if [ "$EXPECTED" = "" ]
     then
@@ -67,7 +68,6 @@ check_foss_licenses_helper()
     cd .. > /dev/null 2>&1
     LICENSE_FILE=./var/licenses/${EXPECTED}.json
     LICENSE_FILE2=./var/licenses/${EXPECTED}.LICENSE
-    #echo " - check file: $LICENSE_FILE"
     if [ ! -f  $LICENSE_FILE ]
     then
         echo "License missing"
@@ -81,7 +81,9 @@ check_foss_licenses_helper()
         exit 1
     fi
     ACTUAL=$(./devel/flame -of text license "$ALIAS")
+    ACTUAL_NAMED=$(./devel/flame -of text license "$NAME")
 
+    # check alias
     if [ "${EXPECTED}" != "${ACTUAL}" ]
     then
         verbose "      missing: ${ALIAS} ${EXPECTED}"
@@ -98,6 +100,24 @@ check_foss_licenses_helper()
     else
         verbose "      already present: ${ALIAS} ${EXPECTED}"
     fi
+
+    # check name
+    if [ "${EXPECTED}" != "${ACTUAL_NAMED}" ]
+    then
+        verbose "      missing: ${NAME} ${EXPECTED}"
+        echo "./devel/flame -of text license \"$NAME\""
+        echo "# License ${EXPECTED} is missing name: $NAME"
+        ./devel/add-alias ${EXPECTED} "${NAME}"
+        echo git add $LICENSE_FILE $LICENSE_FILE2
+        echo git diff $LICENSE_FILE
+        echo git commit -m " 'add alias for: ${EXPECTED}' " $LICENSE_FILE $LICENSE_FILE2
+        echo "Press enter to continue...."
+        read ans
+        echo "....continuing"
+        
+    else
+        verbose "      already present: ${NAME} ${EXPECTED}"
+    fi
     cd - > /dev/null 2>&1
 }
 
@@ -106,9 +126,11 @@ check_foss_licenses()
     LICENSE_ID="$1"
     LICENSE_SPDX_ID="$2"
     LICENSE_NAME="$3"
-    verbose "     Checking $LICENSE_ID"
+    verbose "     Checking $LICENSE_ID - $LICENSE_SPDX_ID - $LICENSE_NAME"
 
-    check_foss_licenses_helper "$LICENSE_ID" "${LICENSE_SPDX_ID}"
+    verbose "         Checking $LICENSE_ID - $LICENSE_SPDX_ID"
+    check_foss_licenses_helper "$LICENSE_ID" "${LICENSE_SPDX_ID}" "${LICENSE_NAME}"
+
 }
 
 check_license()
@@ -123,35 +145,7 @@ check_license()
     LICENSE_SPDX_ID="$(cat $LICENSE_FILE | jq -r .spdx_id | sed 's, ,,g')"
     LICENSE_NAME="$(cat $LICENSE_FILE | jq -r .name)"
 
-    if [ "$LICENSE_ID" == "lgpl-2-0" ]
-    then
-        echo "Ignore $LICENSE_ID"
-        return
-    elif [ "$LICENSE_ID" == "gpl-1-0" ]
-    then
-        echo "Ignore $LICENSE_ID"
-        return
-    elif [ "$LICENSE_ID" == "agpl-3-0" ]
-    then
-        echo "Ignore $LICENSE_ID"
-        return
-    elif [ "$LICENSE_ID" == "lgpl-3-0" ]
-    then
-        echo "Ignore $LICENSE_ID"
-        return
-    elif [ "$LICENSE_ID" == "gpl-3-0" ]
-    then
-        echo "Ignore $LICENSE_ID"
-        return
-    elif [ "$LICENSE_ID" == "nokia" ]
-    then
-        echo "Ignore $LICENSE_ID"
-        return
-    elif [ "$LICENSE_ID" == "ecos-2-0" ]
-    then
-        echo "Ignore $LICENSE_ID"
-        return
-    elif [ "$LICENSE_ID" == "vcw" ]
+    if [ "$LICENSE_ID" == "ecos-2-0" ] || [ "$LICENSE_ID" == "lgpl-2-0" ] || [ "$LICENSE_ID" == "gpl-1-0" ] || [ "$LICENSE_ID" == "agpl-3-0" ] || [ "$LICENSE_ID" == "lgpl-3-0" ] || [ "$LICENSE_ID" == "gpl-3-0" ] || [ "$LICENSE_ID" == "nokia" ]
     then
         echo "Ignore $LICENSE_ID"
         return
