@@ -7,6 +7,7 @@
     "scancode_key": "wordnet",
     "spdxid": "WordNet",
     "aliases": [
-        "wordnet"
+        "wordnet",
+        "WordNet"
     ]
 }
