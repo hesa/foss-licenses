@@ -18,6 +18,7 @@
         "osi:NOSL3.0",
         "osi:NPOSL-3.0",
         "scancode:nosl-3.0",
-        "nposl-3-0"
+        "nposl-3-0",
+        "Non-Profit Open Software License version 3.0"
     ]
 }
