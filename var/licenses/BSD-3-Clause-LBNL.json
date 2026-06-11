@@ -13,6 +13,7 @@
         "LBNL BSD Variant",
         "scancode://lbnl-bsd",
         "LBNL BSD",
-        "bsd-3-clause-lbnl"
+        "bsd-3-clause-lbnl",
+        "Lawrence Berkeley National Labs BSD Variant License"
     ]
 }
