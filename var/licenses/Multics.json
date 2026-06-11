@@ -13,6 +13,7 @@
         "osi:Multics",
         "scancode://multics",
         "scancode:multics",
-        "multics"
+        "multics",
+        "Multics License"
     ]
 }
