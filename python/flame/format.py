@@ -442,9 +442,12 @@ class TextOutputFormatter(OutputFormatter):
             ret.append(f' * "{id_lic["queried_name"]}" -> "{id_lic["name"]}" via "{id_lic["identified_via"]}"')
         return "\n".join(ret)
 
-    def format_expression(self, expression, verbose=False):
+    def format_expression(self, expression, verbose=False, scancode_keys=False):
         ret = []
-        id_lic = expression['identified_license']
+        if scancode_keys:
+            id_lic = expression['identified_license_scancode_key']
+        else:
+            id_lic = expression['identified_license']
         ret.append(f'{id_lic}')
         if verbose:
             for identification in expression['identifications']:
