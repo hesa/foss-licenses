@@ -252,6 +252,24 @@ class FossLicenses:
         self.license_db[SCANCODE_KEYS_TAG] = scancode_keys
         self.license_db[LICENSE_OPERATORS_TAG] = self.__read_json(LICENSE_OPERATORS_FILE)['operators']
 
+    def __is_keyword(self, license_token):
+        return license_token in ['OR', 'AND', '(', ')', 'WITH']
+
+    def __expression_license_scancode(self, license_expression):
+        license_expression_scancode = []
+        fixed_license_expression = license_expression.replace('(', ' ( ').replace(')', ' ) ')
+        for license_token in fixed_license_expression.split(' '):
+            if not license_token:
+                continue
+            elif self.__is_keyword(license_token):
+                pass
+            else:
+                if license_token in self.license_db['licenses']:
+                    license_token = str(self.license_db['licenses'][license_token].get('scancode_key', license_token))
+            license_expression_scancode.append(license_token)
+
+        return ' '.join(license_expression_scancode)
+
     def __identify_license(self, name):
         if name in self.license_db[LICENSES_TAG]:
             ret_name = name
@@ -271,7 +289,7 @@ class FossLicenses:
             'identified_via': ret_id,
         }
 
-    def __init_needles(self, needles, needle_tag, license_expression, allow_letter=False):
+    def __init_needles(self, needles, needle_tag, allow_letter=False):
         if needle_tag not in self.needles_map:
             my_needles = []
             for needle in reversed(collections.OrderedDict(sorted(needles.items(), key=lambda x: len(x[0])))):
@@ -287,7 +305,7 @@ class FossLicenses:
 
     def __update_license_expression_helper(self, needles, needle_tag, license_expression, allow_letter=False):
         replacements = []
-        self.__init_needles(needles, needle_tag, license_expression, allow_letter)
+        self.__init_needles(needles, needle_tag, allow_letter)
         for c_needle in self.needles_map[needle_tag]:
             regexp = c_needle[0]
             needle = c_needle[1]
@@ -555,9 +573,11 @@ class FossLicenses:
                 parse_text = f'Parsing failed: {update_problem}.'
 
             raise FlameException(f'Could not parse the license "{license_expression}". {amb_text} {parse_text}')
+        simplified = str(self.simplify([license_parsed]))
         ret = {
             'queried_license': license_expression,
-            FLAME_IDENTIFIED_LICENSE_TAG: str(self.simplify([license_parsed])),
+            FLAME_IDENTIFIED_LICENSE_TAG: simplified,
+            'identified_license_scancode_key': self.__expression_license_scancode(simplified),
             'identifications': replacements,
             'ambiguities': ambiguities,
             'updated_license': updated_license,

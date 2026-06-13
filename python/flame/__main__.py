@@ -92,6 +92,11 @@ def get_parser():
     parser_e = subparsers.add_parser(
         'license', help='Convert license to SPDX identifiers and syntax')
     parser_e.set_defaults(which='license', func=show_license)
+    parser_e.add_argument('-sc', '--scancode-keys',
+                          action='store_true',
+                          dest='scancode_keys',
+                          help='Output license with scancode keys instead of SPDX identifiers',
+                          default=False)
     parser_e.add_argument('license', type=str, nargs='+', help='license expression to fix')
 
     # full license
@@ -222,8 +227,9 @@ def compatibility(fl, formatter, args):
 
 def show_license(fl, formatter, args):
     validations = __validations(args)
+    scancode_keys = args.scancode_keys
     expression = fl.expression_license(' '.join(args.license), validations=validations, update_dual=(not args.no_dual_update))
-    return formatter.format_expression(expression, args.verbose)
+    return formatter.format_expression(expression, args.verbose, scancode_keys)
 
 def full_license(fl, formatter, args):
     expr_split = fl.expression_license(args.license)['identified_license'].split()

@@ -101,7 +101,7 @@ check_presence()
         RET=$(( $RET + 1 ))
         _RET="FAIL"
         LICENSE_ERRORS="$LICENSE_ERRORS\n$REG_EXP_PRESENCE not present in $FILE"
-        exit
+        exit 1
     fi
 
     # check unpresence
@@ -350,7 +350,7 @@ check_presence MPL-2.0 " -e 2" " -e 1"
 check_presence MPL-2.0-no-copyleft-exception " -i -e 2 -e 'no[ \-]copyleft'" "-e 1"
 
 check_presence MS-PL " -i -e ms -e 'microsoft, pl'  -e 'microsoft public license' " " -i -e mpl"
-check_presence MS-RL  ' -i -e MS-RL -e "MS License,[ Va-z]* RL" -e "MS, Version RL"'   '' 
+check_presence MS-RL  ' -i -e MS-RL -e "MS License,[ Va-z]* RL" -e "MS, Version RL" -e Microsoft Reciprocal'   '' 
 
 check_presence MulanPSL-1.0 " -e 1" " -e 2"
 check_presence MulanPSL-2.0 " -e 2" " -e 1"
@@ -367,7 +367,7 @@ check_presence NTP " -i -e ntp -e network " ""
 
 check_presence OCaml-LGPL-linking-exception " -i -e ocaml" ""
 check_presence OCLC-2.0  ' -i -e OCLC'   ' -e 1' 
-check_presence OLFL-1.3  ' -i -e OLFL'   ' -e 2' 
+check_presence OLFL-1.3  ' -i -e OLFL -e Logistics'   ' -e 2' 
 check_presence ODC-By-1.0 " -i -e 1.0 -e odc" ""
 check_presence OFL-1.0 " -e 1.0 " " -e 1.1"
 check_presence OFL-1.1 " -e 1.1" " -e 1.0"
@@ -375,7 +375,7 @@ check_presence OGTSL " -i -e ogtsl -e Open\ Group -e ogts\ license -e opengroup"
 check_presence OLDAP-2.8 " -i -e oldap -e open[\ ]*ldap" ""
 check_presence OML " -i -e oml -e market -e fastcgi -e OM\ License" ""
 check_presence OpenSSL " -i -e openssl " ""
-check_presence OSC-1.0  ' -i -e OSC-1.0'   '' 
+check_presence OSC-1.0  ' -i -e OSC-1.0 -e OSC "[a-zA-Z]* 1.0" '   '' 
 check_presence OSET-PL-2.1  ' -i -e OSET -e OPL'   '' 
 check_presence OSL-1.0 " -i -e Open\ Software -e OSL-1 -e OSL\ 1 -e 'OSL[\, a-zA-Z ]*1.0'" " -e 2 -e 3"
 check_presence OSL-2.1 " -i -e Open\ Software -e OSL-2 -e OSL\ 2" " -e 3"
