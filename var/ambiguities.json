@@ -149,7 +149,8 @@
             "aliases": [
                 "CDDL",
                 "CDDL-1",
-                "Common Development and Distribution License (CDDL)"
+                "Common Development and Distribution License (CDDL)",
+              "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL)"
             ],
             "problem": "There are two versions of the CDDL license (CDDL-1.0 and CDDL-1.1). Without the version/variant of the license it is not possible to determine which of the versions is meant."    
         },
@@ -285,7 +286,7 @@
         },
         "SIL Open Font License": {
             "aliases": [
-                "SIL OPEN FONT LICENSE"
+              "SIL OPEN FONT LICENSE"
             ],
             "problem": "This license has different versions (1.0 and 1.1) and variantes. Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
@@ -353,7 +354,8 @@
             "aliases": [
               "Unicode",
               "unicode-data",
-              "Unicode-data"
+              "Unicode-data",
+              "Unicode, Inc. License Agreement - Data Files and Software"
             ],
             "problem": "This license has different variants/versions (Unicode Terms of Use, Unicode-3.0, Unicode Inc License Agreement .... ). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
         },
