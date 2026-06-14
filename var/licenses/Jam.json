@@ -1,0 +1,13 @@
+{
+    "meta": {
+        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "comment": ""
+    },
+    "name": "Jam License",
+    "scancode_key": "jam",
+    "spdxid": "Jam",
+    "aliases": [
+        "jam",
+        "JAM License"
+    ]
+}

@@ -1,10 +1,10 @@
 
 |Type            | Number |
 |----------------|--------|
-|Licenses        | 220    |
-|Aliases         | 3105   |
+|Licenses        | 275    |
+|Aliases         | 3596   |
 |Compatibilities | 22     |
 |Operators       | 14     |
-|Ambiguities     | 153    |
-|Compounds       | 65     |
-|No versions     | 32     |
+|Ambiguities     | 169    |
+|Compounds       | 112    |
+|No versions     | 36     |

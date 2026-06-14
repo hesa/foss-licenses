@@ -11,14 +11,22 @@
           "AGPL 3.0 WITH romic-exception"
         ]
       },
-        {
-            "spdxid": "Apache-2.0 WITH LLVM-exception",
-            "aliases": [
+      {
+        "spdxid": "AGPL-3.0-only WITH Font-exception-2.0",
+        "aliases": [
+          "AGPL-3.0-or-later WITH font exception"
+        ]
+      },
+      {
+        "spdxid": "Apache-2.0 WITH LLVM-exception",
+        "aliases": [
+          "Apache-2.0 WITH LLVM Exception",
+          "Apache-2.0 WITH LLVM-exception",
+          "Apache-2.0 WITH llvm-exception",
                 "Apache-2.0-WITH-LLVM-exception",
                 "Apache-2.0-with-LLVM-exception",
                 "APACHE-2-LLVM-EXCEPTIONS",
                 "Apache-2.0 WITH LLVM exceptions",
-                "Apache-2.0 WITH LLVM-exception",
                 "Apache 2.0 w/LLVM",
               "Apache 2.0 w/LLVM Exception",
               "Apache License-2.0-with-LLVM-exception",
@@ -27,8 +35,8 @@
               "Apache-with-LLVM-Exception",
               "Apache-with-Runtime-Exception",
               "Apache-2.0 WITH LLVM-exception exception",
-              "Apache-2.0 WITH LLVM Exceptions"
-
+              "Apache-2.0 WITH LLVM Exceptions",
+              "Apache-2.0 WITH LLVM Exceptions."
             ],
             "compatibility_as": "0BSD"            
         },
@@ -70,12 +78,24 @@
             ]
         },
         {
+            "spdxid": "GPL-2.0-or-later WITH Libtool-exception",
+          "aliases": [
+            "GPL-2.0-or-later WITH libtool exception",
+            "GPL-2.0-or-later WITH LibTool exception",
+            "gpl-2+-libtool-exception",
+            "GPL-2+withlibtoolexception"
+            ]
+        },
+        {
             "spdxid": "GPL-2.0-only WITH Linux-syscall-note",
             "aliases": [
               "GPL-2.0-only WITH Linux-syscall-note-exception",
               "GPL-2 with Linux-syscall-note exception",
               "GPL-2.0-only WITH Linux Syscall Note",
-              "gpl-2.0-with-linux-syscall-note"
+              "gpl-2.0-with-linux-syscall-note",
+              "GPL-2.0-only WITH linux-syscall-note",
+              "GPL-2.0-only WITH linux-syscall-note exception",
+              "GPL-2withLinux-syscall-noteexception"
             ],
             "compatibility_as": "GPL-2.0-only WITH Classpath-exception-2.0"
         },
@@ -83,12 +103,6 @@
             "spdxid": "GPL-2.0-or-later WITH Classpath-exception-2.0",
             "aliases": [
                 "GPL-2.0-or-later AND Classpath-exception-2.0"
-            ]
-        },
-        {
-            "spdxid": "GPL-2.0-or-later WITH Libtool-exception",
-            "aliases": [
-                "GPL-2+-libtool-exception"
             ]
         },
         {
@@ -111,7 +125,53 @@
                 "GPL-3--libtool-exception"
             ]
         },
-        {
+      {
+        "spdxid": "GPL-2.0-or-later WITH Autoconf-exception-2.0",
+        "aliases": [
+          "GPL-2.0-or-later WITH autoconf-data exception",
+          "GPL-2.0-or-later WITH Autoconf-data exception",
+          "gpl-2+-autoconf",
+          "gpl-2+-autoconf-archive",
+          "gpl-2+-autoconf-exception",
+          "GPL-2+-autoconf-exception",
+          "GPL2+-with-Autoconf-Macros-exception"
+        ]
+      },
+      {
+        "spdxid": "GPL-2.0-only WITH Autoconf-exception-2.0",
+        "aliases": [
+          "GPL-2.0-with-autoconf-exception+",
+          "GPL-2.0-with-autoconf-exception",
+          "gpl-2.0-with-autoconf-exception+"
+        ]
+      },
+      {
+        "spdxid": "GPL-2.0-or-later WITH GCC-exception-2.0",
+        "aliases": [
+          "GPL-2.0-or-later WITH gnu-compiler-exception",
+          "GPL-2.0-or-later WITH gcc-exception-2.0",
+          "GPL-2+withLibraryexception",
+          "gpl-2+-with-link-exception",
+          "GPL-2+-with-link-exception"
+        ]
+      },
+      {
+        "spdxid": "GPL-3.0-or-later WITH Autoconf-exception-3.0",
+        "aliases": [
+          "gpl-3+-autoconf-exception",
+          "GPL-3+-autoconf-exception",
+          "GPL3+withautoconfexception",
+          "GPL-3.0-or-later WITH AutoConf exception",
+          "GPL-3.0-or-later WITH autoconf-data exception",
+          "GPL-3.0-or-later WITH Autoconf-data exception",
+          "GPL-3.0-or-later WITH autoconf exception",
+          "GPL-3.0-or-later WITH Autoconf exception",
+          "GPL-3.0-or-later-WITH-Autoconf-exception-macro",
+          "GPL-3.0-or-later WITH autoconf generic exception",
+          "GPL-3.0-or-later WITH Autoconf Macros exception"
+        ]
+      },
+      {
             "spdxid": "GPL-3.0-only WITH GCC-exception-3.1",
             "aliases": [
                 "GPL-3.0-with-GCC-exception",
@@ -124,12 +184,39 @@
               "GPL-3 w/ GCC exception",
               "GPL-3.0-only WITH GCC exception",
               "GPL-3.0-only WITH GCC Runtime Library exception",
-              "GPL-2.0-only WITH GCC exception",
-              "GPL-2.0-only WITH GCC Runtime Library exception",
               "GNU General Public License 3 plus GCC RUNTIME LIBRARY EXCEPTION",
-              "GNU General Public Licensev3 w/Runtime exception V3.1"
+              "GNU General Public Licensev3 w/Runtime exception V3.1",
+              "GPL-3.0-only plus GCC RUNTIME LIBRARY EXCEPTION",
+              "GPL-3.0-only WITH RLE"
             ],
             "compatibility_as": "0BSD"
+        },
+      {
+            "spdxid": "GPL-2.0-only WITH GCC-exception-2.0",
+            "aliases": [
+              "GPL-2.0-only WITH GCC exception",
+              "GPL-2.0-only WITH GCC Runtime Library exception"
+            ],
+            "compatibility_as": "0BSD"
+        },
+      {
+            "spdxid": "GPL-2.0-only WITH Font-exception-2.0",
+        "aliases": [
+          "GPL-2.0-only WITH font exception"
+            ]
+        },
+      {
+            "spdxid": "GPL-2.0-or-later WITH Font-exception-2.0",
+        "aliases": [
+          "GPL-2.0-or-later WITH font exception",
+          "GPL-2.0-or-later WITH Font exception"
+            ]
+        },
+      {
+            "spdxid": "GPL-3.0-only WITH Font-exception-2.0",
+        "aliases": [
+          "GPL-3.0-only WITH font exception"
+        ]
         },
         {
             "spdxid": "GPL-3.0-or-later WITH GCC-exception-3.1",
@@ -142,6 +229,21 @@
             "spdxid": "GPL-3.0-or-later WITH Libtool-exception",
             "aliases": [
                 "GPL-3+-libtool-exception"
+            ]
+        },
+        {
+            "spdxid": "LGPL-2.1-or-later WITH LicenseRef-scancode-openssl-exception-lgpl2.0plus",
+          "aliases": [
+            "LGPL-2.1-or-later WITH openssl exception",
+            "LGPL-2.1-or-later WITH OpenSSL exception",
+            "LGPL-2.1+withOpenSSLexception"
+          ]
+        },
+        {
+            "spdxid": "LGPL-3.0-only WITH LGPL-3.0-linking-exception",
+            "aliases": [
+              "LGPL-3.0-only WITH LGPL-3.0-linking exception",
+              "LGPL-3.0-only WITH LGPL-3.0-linking-exception"
             ]
         }
     ]

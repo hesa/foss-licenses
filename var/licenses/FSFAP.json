@@ -15,6 +15,10 @@
    "FSF All Permissive",
     "scancode:fsf-ap",
     "fsf-ap",
-    "fsfap"
+    "fsfap",
+    "GNU-All-permissive-Copying-License",
+    "GNU-All-Permissive-License",
+    "GNU-All-Permissive-License-FSF",
+    "fsfap-no-warranty"
   ]
 }

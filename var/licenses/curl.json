@@ -21,6 +21,7 @@
         "curl licence",
         "Libcurl license",
         "MIT License (Customized with curl note)",
-        "The curl License"
+      "The curl License",
+      "MIT Style https://github.com/curl/curl?tab=License-1-ov-file"
     ]
 }

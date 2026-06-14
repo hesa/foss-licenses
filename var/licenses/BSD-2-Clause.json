@@ -74,6 +74,7 @@
       "FREEBSD",
       "bsd-2-clause-freebsd",
       "bsd-2-clause-netbsd",
-      "BSD-2-clause-NetBSD"
+      "BSD-2-clause-NetBSD",
+      "NetBSD"
     ]
 }

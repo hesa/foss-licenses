@@ -12,14 +12,14 @@
               "License :: OSI Approved :: Academic Free License",
               "ACADEMIC FREE LICENSE _AFL_"
             ],
-            "problem": "This license has many different versions (1.1, 1.2, 2.0, 2.1 and 3.0). Without a version number it is impossible to determine which of the versions is meant."
+            "problem": "The Academic Free license has multiple versions: 1.1, 1.2, 2.0, 2.1 and 3.0. Without a version number it is impossible to determine the specific license being used."
         },
         "GNU Affero General Public License": {
             "aliases": [
               "AGPL",
               " Affero General Public License"
             ],
-            "problem": "This license has different versions (1.0, 2.0 and 3.0) and different names (version 1.0 does not have GNU in the name). Without a version number it is impossible to determine which of the versions is meant."
+            "problem": "This license has multiple versions (1.0, 2.0 and 3.0), and different names (version 1.0 does not have GNU in the name). Without a version number it is impossible to determine the specific license being used."
         },
         "Apache License": {
             "aliases": [
@@ -43,7 +43,8 @@
               "LICENSE-APACHE",
               "Apache other",
               "APACHE",
-              "APACHE SOFTWARE LICENSE"
+              "APACHE SOFTWARE LICENSE",
+              "OSI-Approved----Apache-Software-License"
             ],
             "problem": "This license has different version (1.0, 1.1, and 2.0). Without a version number it is impossible to determine which of the versions is meant."
         },
@@ -62,9 +63,20 @@
                 "Artistic",
               "Artistic License (Perl)",
               "Artistc",
-              "ARTISTIC LICENSE"
+              "ARTISTIC LICENSE",
+              "artistic-dist",
+              "Artistic-dist",
+              "Artistic License-dist"
+              
             ],
-            "problem": "This license has different version (1.0, and 2.0). Without a version number it is impossible to determine which of the versions is meant."
+            "problem": "This license has different versions (1.0, and 2.0). Without a version number it is not possible to determine which of the versions is meant."
+        },
+        "Autoconf exception": {
+            "aliases": [
+              "autoconf",
+              "Autoconf"
+            ],
+          "problem": "This exception has different versions (2.0, and 3.0) and variants (macro, generric). Without a version number it is not possible to determine which of the versions is meant."
         },
         "Boost": {
             "aliases": [
@@ -77,6 +89,12 @@
                 "Boost-Software-License"
             ],
             "problem": "There are at least two versions of the Boost license (Original Boost and BSL-1.0). Without the version/variant of the license it is impossible to determine which of the versions is meant."
+        },
+        "Bison exception": {
+          "aliases": [
+            "bison exception"
+            ],
+            "problem": "There are at least two versions of the Boost exception (Bison-exception-1.24 and Bison exception 2.2). Without the version/variant of the license it is not possible to determine which of the versions is meant."
         },
         "BSD": {
             "aliases": [
@@ -131,7 +149,8 @@
             "aliases": [
                 "CDDL",
                 "CDDL-1",
-                "Common Development and Distribution License (CDDL)"
+                "Common Development and Distribution License (CDDL)",
+              "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL)"
             ],
             "problem": "There are two versions of the CDDL license (CDDL-1.0 and CDDL-1.1). Without the version/variant of the license it is impossible to determine which of the versions is meant."    
         },
@@ -267,7 +286,7 @@
         },
         "SIL Open Font License": {
             "aliases": [
-                "SIL OPEN FONT LICENSE"
+              "SIL OPEN FONT LICENSE"
             ],
             "problem": "This license has different versions (1.0 and 1.1) and variantes. Without a version number clearly distinguishing the version it is impossible to determine which of the versions is meant."
         },
@@ -300,11 +319,31 @@
               "python",
               "Python license",
               "PYTHON SOFTWARE FOUNDATION LICENSE",
-              "python software licence"
+              "python software licence",
+              "psfl",
+              "PSF License Agreement",
+              "Python License"
             ],
             "problem": "This license has different versions (2.0 and 2.0.1). Without a version number clearly distinguishing the version it is impossible to determine which of the versions is meant."
         },
-        "Sun Industry Standards Source License": {
+      "Q Public License": {
+        "aliases": [
+          "QPL"
+        ],
+        "problem": "This license has different versions and/or variants (1.0 and INRIA-2004). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+      },
+      "Reciprocal Public License": {
+        "aliases": [
+          "RPL"
+        ],
+        "problem": "This license has different versions (1.1 and 1.5). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+      },
+      "Simple Public License": {
+        "aliases": [
+        ],
+        "problem": "This license has different versions (1.1 and 2.0). Without a version number clearly distinguishing the version it is not possible to determine which of the versions is meant."
+      },
+      "Sun Industry Standards Source License": {
             "aliases": [
                 "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)",
               "SISSL"
@@ -313,7 +352,10 @@
         },
         "Unicode License": {
             "aliases": [
-                "Unicode"
+              "Unicode",
+              "unicode-data",
+              "Unicode-data",
+              "Unicode, Inc. License Agreement - Data Files and Software"
             ],
             "problem": "This license has different variants/versions (Unicode Terms of Use, Unicode-3.0, Unicode Inc License Agreement .... ). Without a version number clearly distinguishing the version it is impossible to determine which of the versions is meant."
         },

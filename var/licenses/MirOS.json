@@ -19,6 +19,7 @@
         "http://www.opensource.org/licenses/miros",
         "osi:MirOS",
         "scancode:mir-os",
-        "License :: OSI Approved :: MirOS License (MirOS)"
+        "License :: OSI Approved :: MirOS License (MirOS)",
+        "miros"
     ]
 }
