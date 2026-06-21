@@ -17,6 +17,7 @@
         "MIT-CMU",
         "scancode://cmu-template",
         "scancode://cmu-uc",
-        "mit-cmu"
+      "mit-cmu",
+      "License :: OSI Approved :: CMU License (MIT-CMU)"
     ]
 }
