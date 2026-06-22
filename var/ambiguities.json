@@ -127,7 +127,8 @@
                 "bsd",
                 "BSD-clause",
                 "bsd license",
-                "BSD"
+                "BSD",
+              "BSD license family"
             ],
             "problem": "There are a couple of variants or versions of the BSD license (0BSD, BSD-1-Clause, BSD-2-Clause, BSD-3-Clause and BSD-4-Clause). Without the version/variant of the license it is impossible to determine which of the versions is meant."
         },
