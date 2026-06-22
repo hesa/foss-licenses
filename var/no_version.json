@@ -14,7 +14,8 @@
                 "License :: OSI Approved :: GNU Library or...",
                 "GNU Library/LGPL",
                 "GNU Library",
-                "gnu library"
+              "gnu library",
+              "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)"
             ],
             "licenses": [
                 "LGPL-2.0-only",
