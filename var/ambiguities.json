@@ -166,7 +166,8 @@
         },
         "Creative Commons License": {
             "aliases": [
-                "Creative Commons"
+              "Creative Commons",
+              "Creative Commons license family"
             ],
             "problem": "There are couple of varians and versions of the Creative Commons licenses. Without the version/variant of the license it is impossible to determine which of the versions is meant."
         },
