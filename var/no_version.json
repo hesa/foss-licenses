@@ -37,7 +37,8 @@
                 "lesser general public license",
                 "Lesser GPL",
                 "GNU Lesser General Public",
-                "GNU/GNU Lesser"
+                "GNU/GNU Lesser",
+              "GNU Lesser General Public License family"
             ],
             "licenses": [
                 "LGPL-2.1-only",
