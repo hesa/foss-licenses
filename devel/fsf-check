@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ ! -f licenses.txt ]
+then 
+    curl -LJO "https://www.gnu.org/licenses/license-list.html"
+    html2text license-list.html > license-list.html.txt
+    grep "^  [A-Za-z]" license-list.html.txt | sed -e 's, (#,:,g' -e 's,)$,,g' -e 's,^[ ]*,,g' -e 's,_, ,g' > licenses.txt
+fi
+
+
+
