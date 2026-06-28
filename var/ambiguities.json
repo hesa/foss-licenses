@@ -127,7 +127,8 @@
                 "bsd",
                 "BSD-clause",
                 "bsd license",
-                "BSD"
+                "BSD",
+              "BSD license family"
             ],
             "problem": "There are a couple of variants or versions of the BSD license (0BSD, BSD-1-Clause, BSD-2-Clause, BSD-3-Clause and BSD-4-Clause). Without the version/variant of the license it is impossible to determine which of the versions is meant."
         },
@@ -165,7 +166,8 @@
         },
         "Creative Commons License": {
             "aliases": [
-                "Creative Commons"
+              "Creative Commons",
+              "Creative Commons license family"
             ],
             "problem": "There are couple of varians and versions of the Creative Commons licenses. Without the version/variant of the license it is impossible to determine which of the versions is meant."
         },
@@ -208,7 +210,8 @@
             "aliases": [
                 "GNU v3",
                 "License :: OSI Approved :: GNU...v3 or later",
-                "License :: OSI Approved :: GNU...v2 or later"
+                "License :: OSI Approved :: GNU...v2 or later",
+              "GNU General Public License family"
             ],
             "problem": "There a couple of licenses related to the GNU project. Without the name of the license and version number it is impossible to determine which of the versions is meant."
         },

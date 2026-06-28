@@ -79,6 +79,7 @@
         "bsd-2-clause-freebsd",
         "bsd-2-clause-netbsd",
         "BSD-2-clause-NetBSD",
-        "NetBSD"
+      "NetBSD",
+      "BSD 2-clause “Simplified” license"
     ]
 }
