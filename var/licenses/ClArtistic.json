@@ -1,0 +1,21 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Clarified Artistic License",
+  "scancode_key": "artistic-clarified",
+  "spdxid": "ClArtistic",
+  "aliases": [
+   "Artistic (clarified)",
+   "Clarified Artistic License",
+   "ClArtistic",
+   "ClArtistic License",
+   "scancode://artistic-clarified",
+   "Artistic clarified",
+   "ClArtistic",
+   "CLARTISTIC",
+   "scancode:artistic-clarified",
+"dummy------remove-------me------------------------------------------------------------------------"
+  ]
+}
