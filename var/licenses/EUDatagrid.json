@@ -1,0 +1,23 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "EU DataGrid Software License",
+  "scancode_key": "eu-datagrid",
+  "spdxid": "EUDatagrid",
+  "aliases": [
+   "EUDatagrid",
+   "EUDatagrid License",
+   "EU Datagrid Software License",
+   "EU DataGrid Software License",
+   "scancode://eu-datagrid",
+   "EU Datagrid",
+   "EUDatagrid License",
+   "EUDATAGRID License",
+   "EUDATAGRID LICENSE",
+   "EU DataGrid Software License",
+   "osi:EUDatagrid",
+   "scancode:eu-datagrid"
+  ]
+}
