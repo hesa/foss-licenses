@@ -1,0 +1,20 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "SFL License Agreement",
+  "scancode_key": "sfl-license",
+  "spdxid": "iMatix",
+  "aliases": [
+   "iMatix",
+   "iMatix License",
+   "iMatix Standard Function Library Agreement",
+   "scancode://sfl-license",
+   "SFL License Agreement",
+   "IMATIX LICENSE",
+   "iMatix STANDARD FUNCTION LIBRARY",
+   "scancode:sfl-license",
+    "License of the iMatix Standard Function Library"
+  ]
+}
