@@ -1,0 +1,18 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Ruby License",
+  "scancode_key": "ruby",
+  "spdxid": "Ruby",
+  "aliases": [
+   "Ruby License (1.9.2 and earlier)",
+   "Ruby License (1.9.3 and later)",
+   "scancode://ruby",
+   "Ruby License",
+    "scancode:ruby",
+    "License of Ruby",
+    "Ruby"
+  ]
+}
