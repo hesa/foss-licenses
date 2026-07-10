@@ -1,0 +1,19 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Imlib2 License",
+  "scancode_key": "imlib2",
+  "spdxid": "Imlib2",
+  "aliases": [
+   "IMLIB2 LICENSE",
+   "IMLIB2 License",
+   "Imlib2 License",
+   "Imlib2",
+   "scancode://imlib2",
+    "scancode:imlib2",
+    "License of imlib2",
+    "imlib"
+  ]
+}
