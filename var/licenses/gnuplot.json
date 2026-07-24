@@ -1,0 +1,18 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "gnuplot License",
+  "scancode_key": "gnuplot",
+  "spdxid": "gnuplot",
+  "aliases": [
+   "gnuplot",
+   "gnuplot License",
+   "scancode://gnuplot",
+   "GNUPLOT License",
+   "GNUPLOT LICENSE",
+   "scancode:gnuplot",
+    "Gnuplot license"
+  ]
+}
