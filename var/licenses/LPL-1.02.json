@@ -1,0 +1,23 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Lucent Public License 1.02",
+  "scancode_key": "lucent-pl-1.02",
+  "spdxid": "LPL-1.02",
+  "aliases": [
+   "LPL-1.02",
+   "Lucent Public License 1.02",
+   "Lucent Public License v1.02",
+   "Lucent Public License, Version 1.02",
+   "scancode://lucent-pl-1.02",
+   "LPL 1.02",
+   "LPL, Version 1.02",
+   "Lucent Public License Version 1.02",
+   "osi:LPL-1.02",
+    "scancode:lucent-pl-1.02",
+    "lucent102",
+    "Lucent Public License Version 1.02 (Plan 9 license)"
+  ]
+}
