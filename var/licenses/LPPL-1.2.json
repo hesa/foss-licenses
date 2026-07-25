@@ -1,0 +1,18 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "LaTeX Project Public License v1.2",
+  "scancode_key": "lppl-1.2",
+  "spdxid": "LPPL-1.2",
+  "aliases": [
+   "LaTeX Project Public License 1.2",
+   "LaTeX Project Public License v1.2",
+   "scancode://lppl-1.2",
+   "LPPL 1.2",
+   "LPPL, Version 1.2",
+    "scancode:lppl-1.2",
+    "LPPL-1.2"
+  ]
+}
