@@ -22,6 +22,7 @@
         "http://opensource.org/licenses/intel",
         "https://opensource.org/licenses/intel",
         "osi:Intel",
-        "scancode:intel-bsd-export-control"
+      "scancode:intel-bsd-export-control",
+      "intel"
     ]
 }
