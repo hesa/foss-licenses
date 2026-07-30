@@ -14,6 +14,8 @@
         "License :: OSI Approved :: Jabber Open Source License",
         "LicenseRef-scancode-josl-1.0",
         "josl-1.0",
-        "Jabber Open Source License"
+      "Jabber Open Source License",
+      "josl",
+      "Jabber Open Source License, Version 1.0"
     ]
 }
