@@ -11,6 +11,7 @@
     "scancode_key": "zpl-1.0",
     "spdxid": "LicenseRef-scancode-zpl-1.0",
     "aliases": [
-        "zpl-1.0"
+      "zpl-1.0",
+      "Zope Public License version 1"
     ]
 }
