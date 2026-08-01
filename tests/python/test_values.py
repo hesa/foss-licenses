@@ -95,12 +95,12 @@ def test_ambigs():
                 logging.debug(f'assert expression: {expression}')
                 logging.debug(f'assert queried:    {expression["queried_license"]}')
                 logging.debug(f'assert identified: {expression["identified_license"]}')
-                logging.debug(f'assert ambigous:   {len(expression["ambiguities"])}')
-                logging.debug(f'assert ambigous:   {expression["ambiguities"][0]["ambigous_license"]}')
-                logging.debug(f'assert {expression["ambiguities"][0]["ambigous_license"]} == {k}')
+                logging.debug(f'assert ambiguous:   {len(expression["ambiguities"])}')
+                logging.debug(f'assert ambiguous:   {expression["ambiguities"][0]["ambiguous_license"]}')
+                logging.debug(f'assert {expression["ambiguities"][0]["ambiguous_license"]} == {k}')
                 logging.debug(f'assert k:          {k}')
                 logging.debug(f'assert a0:         {expression["ambiguities"][0]}')
-                assert expression['ambiguities'][0]['ambigous_license'] == k
+                assert expression['ambiguities'][0]['ambiguous_license'] == k
             except flame.exception.FlameException as e:
                 # flamexception thrown 
                 logging.debug("e: " + str(type(e)))
