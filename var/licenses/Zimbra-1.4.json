@@ -1,0 +1,21 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Zimbra Public License v1.4",
+  "scancode_key": "zimbra-1.4",
+  "spdxid": "Zimbra-1.4",
+  "aliases": [
+   "scancode://zimbra-1.4",
+   "Zimbra-1.4",
+   "Zimbra PL 1.4",
+   "Zimbra Public License v1.4",
+   "scancode:zimbra-1.4",
+   "Zimbra, 1.4",
+   "Zimbra License 1.4",
+   "Zimbra License, Version 1.4",
+   "Zimbra Public License, Version 1.4",
+   "Zimbra, Version 1.4"
+  ]
+}

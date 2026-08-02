@@ -1,0 +1,18 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "xinetd License",
+  "scancode_key": "xinetd",
+  "spdxid": "xinetd",
+  "aliases": [
+   "scancode://xinetd",
+   "xinetd",
+   "xinetd License",
+   "scancode:xinetd",
+   "XINETD License",
+    "XINETD LICENSE",
+    "License of xinetd"
+  ]
+}
