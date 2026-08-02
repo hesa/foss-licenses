@@ -1,0 +1,19 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Netizen Open Source License 1.0",
+  "scancode_key": "nosl-1.0",
+  "spdxid": "NOSL",
+  "aliases": [
+   "Netizen Open Source License",
+   "Netizen Open Source License 1.0",
+   "NOSL 1.0",
+   "scancode://nosl-1.0",
+   "NETIZEN OPEN SOURCE LICENSE",
+   "NOSL",
+   "scancode:nosl-1.0",
+    "Netizen Open Source License (NOSL), Version 1.0"
+  ]
+}
