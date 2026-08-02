@@ -13,6 +13,7 @@ cat fsf-licenses.txt | grep -v "^#" | while read LINE
 do
     ERRS=0
     CNT=1
+    TEXT=""
     while true
     do
         NAME=$(echo $LINE | cut -d : -f$CNT)
@@ -20,21 +21,32 @@ do
         then
             break
         fi
-        echo -n "$NAME: "
         ./devel/flame unknown "$NAME" > /dev/null 2>&1
         RET=$?
-        echo $RET 
+        if [ $RET -eq 0 ]
+        then
+            printf "%-70s OK\n" "$NAME:"
+        else
+            TEXT="$NAME\n# xdg-open \"https://scancode-licensedb.aboutcode.org/?search=$NAME\"\n$TEXT"
+        fi
         ERRS=$(( $ERRS + $RET ))
         CNT=$(( $CNT + 1 ))
+        
         if [ $CNT -eq 5 ]
         then
-            echo " ....something wicked (i.e. too many loops) this way comes, bailing out."
+            echo " ....something wicked (i.e. too many loops) this way comes, bailing out." 1>&2
             break
         fi
     done
     if [ $ERRS -ne 0 ]
     then
-        echo "Errors: $ERRS"
+        echo 
+        echo "------------------------------"
+        echo "Unknown name/alias found"
+        echo "------------------------------"
+        echo
+        #echo "Errors: $ERRS"
+        echo -e "$TEXT"
         break
     fi
 done 
