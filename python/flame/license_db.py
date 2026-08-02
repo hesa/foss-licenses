@@ -524,6 +524,7 @@ class FossLicenses:
                     'license': ret['license_expression'],
                     'ambigous_license': real_lic,
                     'problem': problem,
+                    'identified_with': alias,
                     'description': f'{about_license} Problem: {problem}',
                 })
 
@@ -740,6 +741,14 @@ class FossLicenses:
         license_expression = ' '.join(_license_expression)
         try:
             compat_license_expression = self.expression_license(license_expression, validations=validations, update_dual=False)
+            if len(compat_license_expression['ambiguities']):
+                for ambig in compat_license_expression['ambiguities']:
+                    identified_with = ambig['identified_with']
+                    # if we have a perfect match between the license
+                    # expression and an ambiguity, then return OK
+                    if identified_with == license_expression:
+                        return 'OK', None
+                    
             fixed_license_expression = compat_license_expression['identified_license']
         except Exception:
             fixed_license_expression = license_expression
