@@ -1,0 +1,13 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Phorum License 2.0",
+  "scancode_key": "phorum-2.0",
+  "spdxid": "LicenseRef-scancode-phorum-2.0",
+  "aliases": [
+    "Phorum",
+    "Phorum License, Version 2.0"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": ""
+  },
+  "name": "Anti 996 License Version 1.0 (Draft)",
+  "scancode_key": "996-icu-1.0",
+  "spdxid": "LicenseRef-scancode-996-icu-1.0",
+  "aliases": [
+    "Anti-996",
+    "Anti-996 License"
+  ]
+}
