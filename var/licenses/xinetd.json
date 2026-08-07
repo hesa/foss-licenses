@@ -1,17 +1,20 @@
 {
-"meta": {
+  "meta": {
     "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
-    "comment": ""
+    "comment": "",
+    "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+    "project": "FOSS Licenses",
+    "project_url": "https://github.com/hesa/foss-licenses/"
   },
   "name": "xinetd License",
   "scancode_key": "xinetd",
   "spdxid": "xinetd",
   "aliases": [
-   "scancode://xinetd",
-   "xinetd",
-   "xinetd License",
-   "scancode:xinetd",
-   "XINETD License",
+    "scancode://xinetd",
+    "xinetd",
+    "xinetd License",
+    "scancode:xinetd",
+    "XINETD License",
     "XINETD LICENSE",
     "License of xinetd"
   ]
