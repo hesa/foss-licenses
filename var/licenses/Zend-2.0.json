@@ -1,0 +1,27 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": "",
+    "license": "CC-BY-4.0",
+    "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+  "project": "FOSS Licenses",
+  "project_url": "https://github.com/hesa/foss-licenses/"
+  },
+  "name": "Zend Engine License 2.0",
+  "scancode_key": "zend-2.0",
+  "spdxid": "Zend-2.0",
+  "aliases": [
+   "scancode://zend-2.0",
+   "Zend-2.0",
+   "Zend Engine License 2.0",
+   "Zend Engine License, Version 2.00",
+   "Zend License v2.0",
+   "scancode:zend-2.0",
+   "The Zend Engine License, version 2.00",
+   "Zend",
+   "Zend 2.0",
+   "Zend License 2.0",
+   "Zend License, Version 2.0",
+    "Zend, Version 2.0"
+  ]
+}

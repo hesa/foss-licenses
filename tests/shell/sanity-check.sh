@@ -98,6 +98,9 @@ check_presence()
         echo "Try yourself: "
         echo "              cat $FILE | jq  -r .aliases[] | grep -v $REG_EXP_PRESENCE"
         echo " --------------------------"
+        echo "Useful commands: "
+        echo "              emacs $FILE $THIS_FILE"
+        echo " --------------------------"
         RET=$(( $RET + 1 ))
         _RET="FAIL"
         LICENSE_ERRORS="$LICENSE_ERRORS\n$REG_EXP_PRESENCE not present in $FILE"
@@ -157,6 +160,8 @@ check_presence AGPL-1.0-only     " -i -e 1 -e affero" " -e '1 ' -e 2 -e later -e
 check_presence AGPL-1.0-or-later     " -i -e 1 -e affero" " -e '1 '  -e library -e lesser "
 check_presence AGPL-3.0-only     " -i -e 3 -e affero" " -e '1 ' -e 2 -e later -e plus -e + -e library -e lesser "
 check_presence AGPL-3.0-or-later " -e 3 -e later -e +" " -e '1 ' -e 2  -e library -e lesser "
+
+check_presence Aladdin  ' -i -e Aladdin* -e afpl '   '' 
 
 check_presence Apache-1.0 " -e 1.0" "-e 2 -e 1.1"
 check_presence Apache-1.1 " -e 1.1" "-e 2 -e 1.0"
@@ -225,14 +230,20 @@ check_presence CDDL-1.1 " -e 1.1" " -e 1.0"
 check_presence CECILL-B " -i -e cecill-b -e cecill\ b" " -e -A -e -C"
 check_presence CECILL-C " -i -e cecill-c -e cecill\ c" " -e -A -e -B"
 check_presence CECILL-1.1 " -i -e cecill-1.1 -e 1.1" " -e -A -e -B -e -C -e 2.1"
+check_presence CECILL-2.0  ' -i -e CECILL-2.0* -e "cecill version 2'   ' -e 1.1 -e 2.1 -e B' 
 check_presence CECILL-2.1 " -i -e cecill-2.1 -e 2.1" " -e -A -e -B -e -C -e 1.1"
 
 check_presence CERN-OHL-P-2.0  ' -i -e CERN-OHL  -e "CERN Open" ' ' -e S -e W' 
 check_presence CERN-OHL-S-2.0  ' -i -e CERN-OHL  -e "CERN Open" ' ' -e P -e W' 
 check_presence CERN-OHL-W-2.0  ' -i -e CERN-OHL  -e "CERN Open" ' ' -e P -e S' 
 
+check_presence ClArtistic  ' -i -e ClArtistic* -e Clarified '   '' 
+
 check_presence CNRI-Python " -i -e CNRI  " ""
 check_presence python-ldap " -i -e ldap" ""
+
+check_presence Condor-1.1  ' -i -e Condor*'   '' 
+
 check_presence CPAL-1.0  ' -i -e CPAL-1 -e \"Common Public Attribution\" '   '' 
 check_presence CPL-1.0 " -e 1.0  -e 1 " " -e 0.5 -e 2"
 
@@ -248,6 +259,8 @@ check_presence ECL-2.0 " -e 2.0 -e 2" " -e 1"
 check_presence EFL-1.0 " -e 1.0 -e 1" " -e 2"
 check_presence EFL-2.0 " -e 2.0 -e 2" " -e 1"
 
+check_presence EUDatagrid  ' -i -e EUDatagrid* -e "EU Datagrid" -e EU-Datagrid '   '' 
+
 check_presence EPL-1.0 " -e 1.0 -e 1" " -e 2"
 check_presence EPL-2.0 " -e 2.0 -e 2" " -e 1"
 
@@ -255,8 +268,10 @@ check_presence EUPL-1.0 " -e 1.0 -e 1" " -e 2"
 check_presence EUPL-1.1 " -e 1.1 -e 1" " -e 2"
 check_presence EUPL-1.2 " -e 1.2 -e 1" " -e 0"
 
+check_presence FDK-AAC  ' -i -e FDK-AAC* -e Fraunhofer -e fdk'   '' 
+
 check_presence Font-exception-2.0  ' -i -e Font-exception-2.0 -e font-exception-gpl'    ' -e 1' 
-check_presence FSFAP    " -i -e FSFAP -e \"All Permissive\"  -e \"All-Permissive\" -e fsf-ap"       " -i -e FUL"
+check_presence FSFAP    " -i -e FSFAP -e \"All Permissive\"  -e \"All-Permissive\" -e allpermissive -e fsf-ap"       " -i -e FUL"
 check_presence FSFUL    " -i  -e FSFUL -e unlimited -e fsf-free "      " -e FSFAP -e FSFFULLR -e FSFULLRWD "
 check_presence FSFULLR  " -i -e FSFULLR -e unlimited -e retention "    " -e FSFAP -e FSFULLRWD "
 check_presence FSFULLRWD " -i -e FSFULLRWD -e warranty " " -e FSFAP  "
@@ -265,6 +280,9 @@ check_presence FTL " -i -e FTL -e freetype " ""
 
 check_presence GCC-exception-3.1 " -e GCC -e 3" " -e 2 "
 GPL_COMMON_EXCL=" -e lgpl -e library -e lesser -e affero -e agpl"
+
+check_presence gnuplot  ' -i -e gnuplot*'   '' 
+
 check_presence GPL-1.0-only " -e 1 " " -e 2 -e later -e 3 $GPL_COMMON_EXCL "
 check_presence GPL-2.0-only " -e 2 " " -e '1 ' -e later -e 3  $GPL_COMMON_EXCL  "
 check_presence GPL-3.0-only " -e 3 " " -e '1 ' -e 2 -e later -i  $GPL_COMMON_EXCL "
@@ -280,6 +298,8 @@ check_presence HPND-Intel " -i -e intel" ""
 check_presence ICU " -i -e icu " ""
 check_presence IJG " -i -e ijg -e independent -e jpeg " " -e short"
 check_presence IJG-short " -i -e ijg -e independent -e jpeg  " ""
+check_presence iMatix  ' -i -e iMatix* -e sfl'   '' 
+check_presence Imlib2  ' -i -e Imlib*'   '' 
 check_presence IPA  ' -i -e IPA'   ' -e 2' 
 check_presence IPL-1.0 " -i -e ipl -e ibm   " ""
 check_presence Intel " -i -e intel " " -e 0 -e 1 -e 2 -e 3 -e 4 "
@@ -301,6 +321,10 @@ check_presence LGPL-3.0-linking-exception " -i -e linking" " -e 1 -e 2"
 check_presence LGPL-2.1-or-later " $LGPL_COMMON -e 2 -e later" " -e 3"
 check_presence LGPL-3.0-or-later " $LGPL_COMMON -e 3 -e later" " -e 2"
 
+
+
+check_presence LicenseRef-scancode-996-icu-1.0  ' -i -e 996-icu-1.0* -e anti-996'   '' 
+check_presence LicenseRef-scancode-anti-capitalist-1.4  ' -i -e anti-capitalist -e anticapitalist '   ''
 check_presence LicenseRef-scancode-boost-original " -i -e original " ""
 check_presence LicenseRef-scancode-bsl-1.0 "-i -e bsl" " -i -e busl -e 1.1"
 check_presence LicenseRef-scancode-cvwl " -i -e cvwl -e MITRE " ""
@@ -312,11 +336,13 @@ check_presence LicenseRef-scancode-jasper-1.0 " -i -e jasper" ""
 check_presence LicenseRef-scancode-josl-1.0 " -i josl-1 -e jabber " ""
 check_presence LicenseRef-scancode-cmu-mit " -i -e cmu"
 check_presence LicenseRef-scancode-mit-old-style " -i -e old -e mit" " -i -e ^mit$"
+check_presence LicenseRef-scancode-phorum-2.0  ' -i -e phorum'   '' 
 check_presence LicenseRef-scancode-public-domain " -i -e domain -e public -e pd " ""
 check_presence LicenseRef-scancode-wtfpl-1.0 " -i -e wtfpl " ""
 check_presence LicenseRef-scancode-unicode " -i -e unicode " " -e 3"
+check_presence LicenseRef-scancode-wxwidgets  ' -i -e wx'   '' 
 check_presence LicenseRef-scancode-xfree86-1.0 " -i -e xfree86 " ""
-check_presence LicenseRef-scancode-zpl-1.0 "-i -e zpl" " -i -e zsh"
+check_presence LicenseRef-scancode-zpl-1.0 "-i -e zpl -e zope" " -i -e zsh -e 2"
 check_presence LicenseRef-scancode-zsh " -i -e zsh"  "-i -e zpl"
 
 check_presence Libpng " -i -e libpng -e PNG  " " -e 2 "
@@ -330,7 +356,10 @@ check_presence Linux-OpenIB " -e -i openib" ""
 check_presence Linux-syscall-note " -i -e syscall  " ""
 check_presence LLVM-exception " -i -e llvm  " ""
 
+check_presence LPL-1.02  ' -i -e LPL-1.02 -e "LPL 1.02" -e lucent -e "LPL, Version 1.02" '   '' 
+check_presence LPPL-1.2  ' -i -e LPPL-1.2* -e "LPPL, Version 1.2" -e "LaTeX Project Public License [v]*1.2" -e "LPPL 1.2"'   '' 
 check_presence LPPL-1.3c  ' -i -e LPPL -e Latex'   ' -e 2 ' 
+
 
 check_presence MirOS " -i -e MirOS -e mir-os" ""
 
@@ -362,7 +391,10 @@ check_presence Naumen  ' -i -e Naumen'   ''
 check_presence NCSA " -i -e ncsa -e illinois " ""
 check_presence NGPL " -i -e ngpl -e nethack" ""
 check_presence Nokia " -i -e nokia -e nokos " ""
+check_presence NOSL  ' -i -e NOSL* -e NETIZEN'   '' 
 check_presence NPOSL-3.0  ' -i -e NPOSL -e "Non[ \-]*Profit" -e nosl' '-e "[1-2]" -e "[4-9]" ' 
+check_presence NPL-1.0  ' -i -e NPL-1.0* -e "Netscape Public License [v]*1.0" '   ' -e 1.1' 
+check_presence NPL-1.1  ' -i -e NPL-1.1* -e "Netscape Public License [v]*1.1" -e "Netscape Public License [v]*1.0 -e "Netscape Public License Version 1.1" -e "http://www.mozilla.org/NPL/"  -e "mozilla.org/mpl/MPL/NPL/1.1/" '   ' -e 1.0' 
 check_presence NTP " -i -e ntp -e network " ""
 
 check_presence OCaml-LGPL-linking-exception " -i -e ocaml" ""
@@ -372,7 +404,9 @@ check_presence ODC-By-1.0 " -i -e 1.0 -e odc" ""
 check_presence OFL-1.0 " -e 1.0 " " -e 1.1"
 check_presence OFL-1.1 " -e 1.1" " -e 1.0"
 check_presence OGTSL " -i -e ogtsl -e Open\ Group -e ogts\ license -e opengroup" ""
-check_presence OLDAP-2.8 " -i -e oldap -e open[\ ]*ldap" ""
+check_presence OLDAP-2.3  " -i -e oldap -e open[\ ]*ldap" " -e 2.7 -e 2.8"
+check_presence OLDAP-2.7  " -i -e oldap -e open[\ ]*ldap" " -e 2.2 -e 2.8"
+check_presence OLDAP-2.8 " -i -e oldap -e open[\ ]*ldap" " -e 2.3 -e 2.7"
 check_presence OML " -i -e oml -e market -e fastcgi -e OM\ License" ""
 check_presence OpenSSL " -i -e openssl " ""
 check_presence OSC-1.0  ' -i -e OSC-1.0 -e OSC "[a-zA-Z]* 1.0" '   '' 
@@ -394,6 +428,8 @@ check_presence RPL-1.1  ' -i -e RPL[ ,a-zA-Z]*1.1 -e "Reciprocal Public License[
 check_presence RPL-1.5   ' -i -e RPL[ ,a-zA-Z]*1.4 -e "Reciprocal Public License[ ,a-zA-Z]*1.5"'   '' 
 check_presence RPSL-1.0  ' -i -e RPSL -e "RealNetworks Public Source License"'   '' 
 
+check_presence Ruby  ' -i -e Ruby*'   '' 
+
 check_presence RSA-MD " -i -e RSA " ""
 check_presence RSCPL " -i -e RSCPL -e Ricoh " ""
 
@@ -405,7 +441,7 @@ check_presence SSH-OpenSSH " -i -e openssh" " -i -e ylonen"
 check_presence SSH-short " -i -e ylonen -e ssh-short -e ssh\ short" ""
 check_presence SimPL-2.0  ' -i -e SimPL -e "simple public"'   '' 
 check_presence SISSL  ' -i -e SISSL -e "Sun Industry" -e "sun-issl"'   '' 
-check_presence SPL-1.0 " -i -e sun -e spl" ""
+check_presence SPL-1.0 " -i -e sun -e spl" " -e [2-9] "
 check_presence SSPL-1.0 " -i -e SSPL -e server\ side" ""
 check_presence SunPro " -i -e SunPro " ""
 check_presence SMLNJ " -i -e smlnj -e Jersey -e nj " ""
@@ -417,7 +453,7 @@ check_presence TU-Berlin-1.0 " -e 1 -e berlin" " -e 2"
 check_presence TU-Berlin-2.0 " -e 2" " -e 1"
 
 check_presence UCL-1.0  ' -i -e UCL -e Upstream'   '' 
-check_presence Unicode-3.0 " -i -e 'unicode-[v]3' -e 'unicode license v3' -e '3\-'" ""
+check_presence Unicode-3.0 " -i -e 'unicode-[v]3' -e 'unicode license v3' -e unicodev3 -e '3\-'" ""
 check_presence Unicode-DFS-2016 " -e 2016 -e UNICODE " " -e 2015"
 check_presence Unicode-DFS-2015 " -e 2015 -e UNICODE " " -e 2016"
 check_presence Unicode-TOU " -i -e terms -e tou" ""
@@ -441,12 +477,16 @@ check_presence X11-distribute-modifications-variant " -i -e modifications -e fsf
 check_presence x11-keith-packard " -i -e packard -e hpnd " ""
 check_presence Xerox " -i -e xerox -e exp" " -i -e advertising -e 0 -e wu -e open"
 check_presence Xfig " -i -e Xfig" ""
+check_presence xinetd  ' -i -e xinetd*'   '' 
 check_presence Xnet " -i -e Xnet -e altera -e x.net" ""
 check_presence xpp " -i -e xpp -e indiana " ""
 
 check_presence LicenseRef-scancode-xfree86-1.0 " -i -e 1.0 " " -e  X/MIT -e 1.1 " 
 check_presence XFree86-1.1 " -i -e 1.1 " " -e  X/MIT -e 1.0 " 
 
+check_presence Zend-2.0  ' -i -e Zend'   ' -e 1'  
+check_presence Zimbra-1.3  ' -i -e Zimbra*'   ' -e 1.4' 
+check_presence Zimbra-1.4  ' -i -e Zimbra'   ' -e 1.3' 
 check_presence Zlib " -i -e libz -e zlib -e z-lib" " -i bsd "
 check_presence zlib-acknowledgement "-i -e zlib -e ack" ""
 check_presence ZPL-1.1 " -e 1.1" " -e 2"
@@ -464,3 +504,6 @@ then
 fi
 
 exit $RET
+
+
+

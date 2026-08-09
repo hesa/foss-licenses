@@ -1,0 +1,53 @@
+#!/bin/bash
+
+
+
+if [ ! -f fsf-licenses.txt ]
+then 
+    curl -LJO "https://www.gnu.org/licenses/license-list.html"
+    html2text license-list.html > license-list.html.txt
+    grep "^  [A-Za-z]" license-list.html.txt | sed -e 's, (#,:,g' -e 's,)$,,g' -e 's,^[ ]*,,g' -e 's,_, ,g' > fsf-licenses.txt
+fi
+
+cat fsf-licenses.txt | grep -v "^#" | while read LINE
+do
+    ERRS=0
+    CNT=1
+    TEXT=""
+    while true
+    do
+        NAME=$(echo $LINE | cut -d : -f$CNT)
+        if [ "$NAME" = "" ]
+        then
+            break
+        fi
+        ./devel/flame unknown "$NAME" > /dev/null 2>&1
+        RET=$?
+        if [ $RET -eq 0 ]
+        then
+            printf "%-70s OK\n" "$NAME:"
+        else
+            TEXT="$NAME\n# xdg-open \"https://scancode-licensedb.aboutcode.org/?search=$NAME\"\n$TEXT"
+        fi
+        ERRS=$(( $ERRS + $RET ))
+        CNT=$(( $CNT + 1 ))
+        
+        if [ $CNT -eq 5 ]
+        then
+            echo " ....something wicked (i.e. too many loops) this way comes, bailing out." 1>&2
+            break
+        fi
+    done
+    if [ $ERRS -ne 0 ]
+    then
+        echo 
+        echo "------------------------------"
+        echo "Unknown name/alias found"
+        echo "------------------------------"
+        echo
+        #echo "Errors: $ERRS"
+        echo -e "$TEXT"
+        break
+    fi
+done 
+

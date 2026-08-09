@@ -20,6 +20,8 @@
         "CPAL-1.0",
         "osi:CPAL-1.0",
         "scancode:cpal-1.0",
-        "cpal-1-0"
+      "cpal-1-0",
+      "Common Public Attribution License 1.0 (CPAL)",
+      "CPAL"
     ]
 }

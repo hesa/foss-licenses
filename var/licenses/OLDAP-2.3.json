@@ -1,0 +1,26 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": "",
+    "license": "CC-BY-4.0",
+    "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+  "project": "FOSS Licenses",
+  "project_url": "https://github.com/hesa/foss-licenses/"
+  },
+  "name": "OpenLDAP Public License 2.3",
+  "scancode_key": "openldap-2.3",
+  "spdxid": "OLDAP-2.3",
+  "aliases": [
+   "OLDAP-2.3",
+   "OpenLDAP Public License 2.3",
+   "Open LDAP Public License v2.3",
+   "scancode://openldap-2.3",
+   "OLDAP, 2.3",
+   "OLDAP License, 2.3",
+   "OLDAP License, Version 2.3",
+   "OLDAP, Version 2.3",
+   "OpenLDAP Public License Version 2.3",
+   "scancode:openldap-2.3",
+    "Old OpenLDAP License, Version 2.3"
+  ]
+}

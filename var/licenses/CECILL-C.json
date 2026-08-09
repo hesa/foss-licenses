@@ -21,6 +21,7 @@
         "CECILL-C License",
         "https://spdx.org/licenses/cecill-c",
         "scancode:cecill-c",
-        "License :: CeCILL-C Free Software License Agreement (CECILL-C)"
+      "License :: CeCILL-C Free Software License Agreement (CECILL-C)",
+      "CeCILL-C version 1"
     ]
 }

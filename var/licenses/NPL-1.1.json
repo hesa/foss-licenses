@@ -1,0 +1,25 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": "",
+    "license": "CC-BY-4.0",
+    "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+  "project": "FOSS Licenses",
+  "project_url": "https://github.com/hesa/foss-licenses/"
+  },
+  "name": "Netscape Public License 1.1",
+  "scancode_key": "npl-1.1",
+  "spdxid": "NPL-1.1",
+  "aliases": [
+   "Netscape Public License 1.1",
+   "Netscape Public License v1.1",
+   "Netscape Public License Version 1.1",
+   "NPL-1.1",
+   "scancode://npl-1.1",
+   "https://spdx.org/licenses/npl-1.1",
+   "http://www.mozilla.org/MPL/NPL-1.1.html",
+   "http://www.mozilla.org/NPL/",
+   "mozilla.org/mpl/MPL/NPL/1.1/",
+   "scancode:npl-1.1"
+  ]
+}

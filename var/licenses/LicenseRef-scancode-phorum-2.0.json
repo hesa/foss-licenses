@@ -1,0 +1,17 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": "",
+    "license": "CC-BY-4.0",
+    "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+  "project": "FOSS Licenses",
+  "project_url": "https://github.com/hesa/foss-licenses/"
+  },
+  "name": "Phorum License 2.0",
+  "scancode_key": "phorum-2.0",
+  "spdxid": "LicenseRef-scancode-phorum-2.0",
+  "aliases": [
+    "Phorum",
+    "Phorum License, Version 2.0"
+  ]
+}

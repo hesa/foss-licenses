@@ -22,6 +22,8 @@
         "osi:SPL-1.0",
         "scancode:spl-1.0",
         "SPL, Version 1.0",
-        "spl-1-0"
+      "spl-1-0",
+      "SPL",
+      "Sun Public License"
     ]
 }

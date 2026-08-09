@@ -32,6 +32,7 @@
         "4-clause BSD",
         "BSD 4-clause \"Original\" or \"Old\" License",
         "text://BSD-4-clause",
-        "BSD-4-clause"
+      "BSD-4-clause",
+      "OriginalBSD"
     ]
 }

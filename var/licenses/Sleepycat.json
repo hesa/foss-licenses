@@ -23,6 +23,7 @@
         "scancode:sleepycat",
         "osi:Sleepycat",
         "sleepycat",
-        "Sleepycat license"
+      "Sleepycat license",
+      "Berkeley Database License (a.k.a. the Sleepycat Software Product License)"
     ]
 }

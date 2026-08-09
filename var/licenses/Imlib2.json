@@ -1,0 +1,23 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": "",
+    "license": "CC-BY-4.0",
+    "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+  "project": "FOSS Licenses",
+  "project_url": "https://github.com/hesa/foss-licenses/"
+  },
+  "name": "Imlib2 License",
+  "scancode_key": "imlib2",
+  "spdxid": "Imlib2",
+  "aliases": [
+   "IMLIB2 LICENSE",
+   "IMLIB2 License",
+   "Imlib2 License",
+   "Imlib2",
+   "scancode://imlib2",
+    "scancode:imlib2",
+    "License of imlib2",
+    "imlib"
+  ]
+}
