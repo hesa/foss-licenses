@@ -56,13 +56,13 @@ Current support:
 
 |Type            | Number |
 |----------------|--------|
-|Licenses        | 275    |
-|Aliases         | 3609   |
+|Licenses        | 300    |
+|Aliases         | 3867   |
 |Compatibilities | 22     |
 |Operators       | 14     |
-|Ambiguities     | 172    |
+|Ambiguities     | 189    |
 |Compounds       | 112    |
-|No versions     | 38     |
+|No versions     | 39     |
 
 # About
 
