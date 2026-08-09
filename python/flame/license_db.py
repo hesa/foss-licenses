@@ -748,7 +748,7 @@ class FossLicenses:
                     # expression and an ambiguity, then return OK
                     if identified_with == license_expression:
                         return 'OK', None
-                    
+
             fixed_license_expression = compat_license_expression['identified_license']
         except Exception:
             fixed_license_expression = license_expression
