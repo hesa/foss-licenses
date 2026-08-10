@@ -455,7 +455,7 @@ class FossLicenses:
           "ambiguities": [
             {
               "license": "GNU & GPL-2.0-or-later",
-              "ambigous_license": "GNU",
+              "ambiguous_license": "GNU",
               "problem": "There a couple of licenses related to the GNU project. Without the name of the license and version number it is not possible to determine which of the versions is meant.",
               "description": "An ambiguity was identified in \"GNU & GPL-2.0-or-later\". The ambiguous license is \"GNU\". Problem: There a couple of licenses related to the GNU project. Without the name of the license and version number it is not possible to determine which of the versions is meant."
             }
@@ -522,7 +522,7 @@ class FossLicenses:
                 problem = self.license_db[AMBIG_TAG]["ambiguities"][real_lic]["problem"]
                 ambiguities.append({
                     'license': ret['license_expression'],
-                    'ambigous_license': real_lic,
+                    'ambiguous_license': real_lic,
                     'problem': problem,
                     'identified_with': alias,
                     'description': f'{about_license} Problem: {problem}',
