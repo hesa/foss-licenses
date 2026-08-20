@@ -160,9 +160,25 @@
             "aliases": [],
             "problem": "There are a couple of variants or versions of the Business Source License license (BUSL-1.0, BUSL-1.1). Without the version/variant of the license it is impossible to determine which of the versions is meant."
         },
-        "": {
-            "aliases": [],
-            "problem": "There are a couple of variants or versions of the Business Source License license (BUSL-1.0, BUSL-1.1). Without the version/variant of the license it is impossible to determine which of the versions is meant."
+        "Creative Commons License": {
+          "aliases": [
+            "CC-BY",
+            "Creative Commons NonCommercial, any version",
+            "CC-BY-NC",
+            "Creative Commons Noderivatives, any version",
+            "CC-BY-ND",
+            "Creative Commons Attribution 4.0 license (a.k.a. CC BY)",
+            "ccby",
+            "Creative Commons Attribution-Sharealike 4.0 license (a.k.a. CC BY-SA)",
+            "Creative Commons Attribution 4.0 license (a.k.a. CC BY)",
+            "ccby",
+            "Creative Commons Attribution-Sharealike 4.0 license (a.k.a. CC BY-SA)",
+            "Creative Commons Attribution-NoDerivs 4.0 license (a.k.a. CC BY-ND)",
+            "ccbynd",
+            "Creative Commons Attribution-NoDerivs 4.0 license (a.k.a. CC BY-ND)",
+            "ccbynd"
+            ],
+          "problem": "There are many versions and variants of the Creative Commons licenses ()e.g. CC-BY-SA-1.0, CC-BY-SA-2.0, CC-BY-3.0....). Without the version/variant of the license it is impossible to determine which of the versions is meant."
         },
         "CeCILL": {
             "aliases": [
