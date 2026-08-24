@@ -1,0 +1,17 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": "",
+    "license": "CC-BY-4.0",
+    "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+    "project": "FOSS Licenses",
+    "project_url": "https://github.com/hesa/foss-licenses/"
+  },
+  "name": "Hacktivismo Enhanced-Source Software License Agreement",
+  "scancode_key": "hessla",
+  "spdxid": "LicenseRef-scancode-hessla",
+  "aliases": [
+    "HESSLA",
+    "Hacktivismo Enhanced-Source Software License Agreement (HESSLA)"
+  ]
+}

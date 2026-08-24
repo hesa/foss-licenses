@@ -1,0 +1,27 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": "",
+    "license": "CC-BY-4.0",
+    "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+    "project": "FOSS Licenses",
+    "project_url": "https://github.com/hesa/foss-licenses/"
+  },
+  "name": "Red Hat eCos Public License 1.1",
+  "scancode_key": "ecosrh-1.1",
+  "spdxid": "RHeCos-1.1",
+  "aliases": [
+   "Red Hat eCos Public License 1.1",
+   "Red Hat eCos Public License v1.1",
+   "RHeCos-1.1",
+   "RHeCos License 1.1",
+   "scancode://ecosrh-1.1",
+   "RHeCos 1.1",
+   "RHeCos License, 1.1",
+   "RHeCos License, Version 1.1",
+   "RHeCos, Version 1.1",
+   "scancode:ecosrh-1.1",
+    "eCos11",
+    "eCos Public License, version 1.1"
+  ]
+}

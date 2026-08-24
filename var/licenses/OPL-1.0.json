@@ -1,0 +1,26 @@
+{
+"meta": {
+    "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+    "comment": "",
+    "license": "CC-BY-4.0",
+    "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
+    "project": "FOSS Licenses",
+    "project_url": "https://github.com/hesa/foss-licenses/"
+  },
+  "name": "Open Public License v1.0",
+  "scancode_key": "open-public",
+  "spdxid": "OPL-1.0",
+  "aliases": [
+   "Open Public License 1.0",
+   "Open Public License v1.0",
+   "OPL-1.0",
+   "scancode://open-public",
+   "Open Publication License (OPL) v1.0",
+   "OPEN PUBLIC LICENSE Version 1.0",
+   "OPL 1.0",
+   "OPL, Version 1.0",
+   "scancode:open-public",
+    "OpenPublicL",
+    "Open Public License"
+  ]
+}
