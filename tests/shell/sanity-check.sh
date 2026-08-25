@@ -248,6 +248,7 @@ check_presence CPAL-1.0  ' -i -e CPAL-1 -e \"Common Public Attribution\" '   ''
 check_presence CPL-1.0 " -e 1.0  -e 1 " " -e 0.5 -e 2"
 
 check_presence Classpath-exception-2.0 " -i -e classpath " " -e 1"
+check_presence CPOL-1.02  ' -i -e CPOL-1.02* -e \"Code Project Open License[a-zA-Z,0-9 .]*1.02\" \"CPOL[a-zA-Z,0-9 .]*1.02\" -e cpol'   '' 
 check_presence curl " -i -e curl " ""
 
 check_presence dtoa " -i -e dtoa -e x11 -e MIT" ""
@@ -327,23 +328,30 @@ check_presence LicenseRef-scancode-996-icu-1.0  ' -i -e 996-icu-1.0* -e anti-996
 check_presence LicenseRef-scancode-anti-capitalist-1.4  ' -i -e anti-capitalist -e anticapitalist '   ''
 check_presence LicenseRef-scancode-boost-original " -i -e original " ""
 check_presence LicenseRef-scancode-bsl-1.0 "-i -e bsl" " -i -e busl -e 1.1"
+check_presence LicenseRef-scancode-cmu-mit " -i -e cmu"
+check_presence LicenseRef-scancode-commons-clause  ' -i -e LicenseRef-scancode-commons-clause* -e \"commons clause\"'   '' 
 check_presence LicenseRef-scancode-cvwl " -i -e cvwl -e MITRE " ""
-check_presence LicenseRef-scancode-ibm-as-is " -i -e ibm " ""
 check_presence LicenseRef-scancode-g10-permissive " -i -e  g10 " ""
+check_presence LicenseRef-scancode-hessla  ' -i -e LicenseRef-scancode-hessla* -e HESSLA -e "Hacktivismo Enhanced-Source Software License Agreement"'   '' 
+check_presence LicenseRef-scancode-hippocratic-1.1  ' -i -e LicenseRef-scancode-hippocratic-1.1* -e "Hippocratic License 1.1"'   '' 
+check_presence LicenseRef-scancode-ibm-as-is " -i -e ibm " ""
 check_presence LicenseRef-scancode-indiana-extreme " -i -e indiana " " -e 1.2"
 check_presence LicenseRef-scancode-iso-8879 " -i 8879 " ""
 check_presence LicenseRef-scancode-jasper-1.0 " -i -e jasper" ""
 check_presence LicenseRef-scancode-josl-1.0 " -i josl-1 -e jabber " ""
-check_presence LicenseRef-scancode-cmu-mit " -i -e cmu"
+check_presence LicenseRef-scancode-lha  ' -i -e LicenseRef-scancode-lha* -e Lha -e "License of Lha"'   '' 
 check_presence LicenseRef-scancode-mit-old-style " -i -e old -e mit" " -i -e ^mit$"
 check_presence LicenseRef-scancode-phorum-2.0  ' -i -e phorum'   '' 
+check_presence LicenseRef-scancode-pine  ' -i -e LicenseRef-scancode-pine* -e pine'   '' 
 check_presence LicenseRef-scancode-public-domain " -i -e domain -e public -e pd " ""
-check_presence LicenseRef-scancode-wtfpl-1.0 " -i -e wtfpl " ""
 check_presence LicenseRef-scancode-unicode " -i -e unicode " " -e 3"
+check_presence LicenseRef-scancode-wtfpl-1.0 " -i -e wtfpl " ""
 check_presence LicenseRef-scancode-wxwidgets  ' -i -e wx'   '' 
 check_presence LicenseRef-scancode-xfree86-1.0 " -i -e xfree86 " ""
 check_presence LicenseRef-scancode-zpl-1.0 "-i -e zpl -e zope" " -i -e zsh -e 2"
 check_presence LicenseRef-scancode-zsh " -i -e zsh"  "-i -e zpl"
+
+
 
 check_presence Libpng " -i -e libpng -e PNG  " " -e 2 "
 check_presence libpng-2.0 " -i -e libpng -e PNG  " ""
@@ -507,3 +515,6 @@ exit $RET
 
 
 
+check_presence OPL-1.0  ' -i -e OPL-1.0*'   '' 
+check_presence PPL  ' -i -e PPL*'   '' 
+check_presence RHeCos-1.1  ' -i -e RHeCos-1.1*'   '' 
