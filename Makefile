@@ -91,8 +91,8 @@ py-doc:
 
 check-regression:
 # Check old issues
-	@echo -m "Check the disclaimers: " ; \
-		./tests/shell/check-issues.sh || exit 1; echo "OK"
+	@echo -m "Check old issues: " ; \
+		./tests/shell/test-issues.sh || exit 1; echo "OK"
 
 check-py-cli:
 	@echo -n "Check cli (-h): "
