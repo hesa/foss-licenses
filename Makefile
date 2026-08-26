@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-check: license python clean check-reuse build status
+check: license python check-regression clean check-reuse build status
 	@echo "\n\n\n   Yay.... check succeeded :)\n\n\n"
 
 check_license_files:
@@ -89,6 +89,10 @@ py-doc:
 #cd python/docs && PYTHONPATH=. make html
 	cd python && rm -fr docs/build && PYTHONPATH=. sphinx-build -E docs/source/ docs/build/html
 
+check-regression:
+# Check old issues
+	@echo -m "Check the disclaimers: " ; \
+		./tests/shell/check-issues.sh || exit 1; echo "OK"
 
 check-py-cli:
 	@echo -n "Check cli (-h): "
