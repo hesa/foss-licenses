@@ -90,7 +90,7 @@ def get_parser():
                           dest='scancode_keys',
                           help='Output license with scancode keys instead of SPDX identifiers',
                           default=False)
-    parser_e.add_argument('license', type=str, nargs='+', help='license expression to fix')
+    parser_e.add_argument('license', type=str, nargs=argparse.PARSER, help='license expression to fix')
 
     # full license
     parser_e = subparsers.add_parser(
@@ -160,7 +160,7 @@ def get_parser():
     parser_u = subparsers.add_parser(
         'unknown', help='Show the unknown licenses for a license expression. Intended for foss-licenses developers.')
     parser_u.set_defaults(which='unknown', func=unknown)
-    parser_u.add_argument('license', type=str, nargs='+', help='license expression to fix')
+    parser_u.add_argument('license', type=str, nargs=argparse.PARSER, help='license expression to fix')
 
     return parser
 
