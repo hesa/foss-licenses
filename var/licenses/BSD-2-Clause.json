@@ -80,6 +80,7 @@
         "bsd-2-clause-netbsd",
         "BSD-2-clause-NetBSD",
       "NetBSD",
-      "BSD 2-clause “Simplified” license"
+      "BSD 2-clause “Simplified” license",
+      "BSD 2-Clause License (FreeBSD/Simplified)"
     ]
 }
