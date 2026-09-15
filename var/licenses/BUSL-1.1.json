@@ -16,6 +16,7 @@
         "BUSL-1.1",
         "scancode://bsl-1.1",
         "scancode:bsl-1.1",
-        "bsl-1.1"
+      "bsl-1.1",
+      "Business Source License (BSL-1.1)"
     ]
 }
