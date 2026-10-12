@@ -20,6 +20,7 @@
         "OGTSL license",
         "osi:OGTSL",
         "scancode:opengroup",
-        "ogtsl"
+      "ogtsl",
+      "Open Group Test Suite License (OGTSL)"
     ]
 }
