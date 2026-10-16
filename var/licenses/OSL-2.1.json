@@ -20,6 +20,7 @@
         "osi:OSL-2.1",
         "scancode://osl-2.1",
         "scancode:osl-2.1",
-        "osl-2-1"
+      "osl-2-1",
+      "Open Software License 2.1 (OSL-2.1)"
     ]
 }
