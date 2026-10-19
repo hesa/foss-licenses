@@ -19,6 +19,7 @@
         "LicenseRef-scancode-openssl",
         "OpenSSL license",
         "openssl-ssleay",
-        "openssl"
+      "openssl",
+      "OpenSSL License (OpenSSL)"
     ]
 }
