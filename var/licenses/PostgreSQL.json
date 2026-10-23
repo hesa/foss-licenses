@@ -22,6 +22,7 @@
         "scancode:postgresql",
         "License :: OSI Approved :: PostgreSQL License",
         "PostgreSQL Global Development Group",
-        "The PostgreSQL License"
+      "The PostgreSQL License",
+      "PostgreSQL License (PostgreSQL)"
     ]
 }
