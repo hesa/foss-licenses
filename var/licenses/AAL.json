@@ -17,6 +17,7 @@
         "License :: OSI Approved :: Attribution Assurance License",
         "scancode://attribution",
         "osi:attribution",
-        "scancode:attribution"
+      "scancode:attribution",
+      "Attribution Assurance License (AAL)"
     ]
 }

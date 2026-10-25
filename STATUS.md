@@ -1,8 +1,8 @@
 
 |Type            | Number |
 |----------------|--------|
-|Licenses        | 309    |
-|Aliases         | 3907   |
+|Licenses        | 310    |
+|Aliases         | 3975   |
 |Compatibilities | 22     |
 |Operators       | 14     |
 |Ambiguities     | 190    |

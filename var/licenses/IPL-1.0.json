@@ -23,6 +23,7 @@
    "IPL, Version 1.0",
    "osi:IPL-1.0",
     "scancode:ibmpl-1.0",
-    "IBMPL"
+    "IBMPL",
+    "IBM Public License 1.0 (IPL)"
   ]
 }
