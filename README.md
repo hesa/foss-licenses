@@ -78,11 +78,6 @@ and, to make the database easier to use:
 
 * command line tool
 
-# License
-
-The software is released under [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0.html)
-
-The data and documentation is released under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.en)
 
 # Contributions
 
@@ -129,13 +124,13 @@ made under our license (for the code and data).
 
 * [flict](https://github.com/vinland-technology/flict) - FOSS License Compatibility Tool 
 
-* [scancode](https://github.com/aboutcode-org/scancode-toolkit/) - ScanCode toolkit
+* [scancode](https://github.com/nexB/scancode-toolkit) - ScanCode toolkit
 
 * [ScanCode LicenseDB](https://scancode-licensedb.aboutcode.org/) - a database with licenses
 
 # Acknowledgements
 
-* [AboutCode](https://aboutcode.org/) for their FOSS compliance tools, especially [scancode](https://github.com/aboutcode-org/scancode-toolkit/) and [ScanCode LicenseDB](https://scancode-licensedb.aboutcode.org/).
+* [Nexb](https://www.nexb.com/) for their FOSS compliance tools, especially [scancode](https://github.com/nexB/scancode-toolkit) and [ScanCode LicenseDB](https://scancode-licensedb.aboutcode.org/).
 
 * [Max Huber](https://github.com/maxhbr) for [LDBcollector](https://github.com/maxhbr/LDBcollector)
 
