@@ -124,13 +124,13 @@ made under our license (for the code and data).
 
 * [flict](https://github.com/vinland-technology/flict) - FOSS License Compatibility Tool 
 
-* [scancode](https://github.com/nexB/scancode-toolkit) - ScanCode toolkit
+* [scancode](https://github.com/aboutcode-org/scancode-toolkit/) - ScanCode toolkit
 
 * [ScanCode LicenseDB](https://scancode-licensedb.aboutcode.org/) - a database with licenses
 
 # Acknowledgements
 
-* [Nexb](https://www.nexb.com/) for their FOSS compliance tools, especially [scancode](https://github.com/nexB/scancode-toolkit) and [ScanCode LicenseDB](https://scancode-licensedb.aboutcode.org/).
+* [AboutCode](https://aboutcode.org/) for their FOSS compliance tools, especially [scancode](https://github.com/aboutcode-org/scancode-toolkit/) and [ScanCode LicenseDB](https://scancode-licensedb.aboutcode.org/).
 
 * [Max Huber](https://github.com/maxhbr) for [LDBcollector](https://github.com/maxhbr/LDBcollector)
 
