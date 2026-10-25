@@ -78,6 +78,11 @@ and, to make the database easier to use:
 
 * command line tool
 
+# License
+
+The software is released under [GPL-3.0-or-later](https://www.gnu.org/licenses/gpl-3.0.html)
+
+The data and documentation is released under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/deed.en)
 
 # Contributions
 
