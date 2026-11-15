@@ -17,9 +17,9 @@ Reviewing licenses
 If you find anything suspicious or plain wrong with the licenses, contact us by any of
 the following:
 
-* Create an issue over at: `github.com/hesa/foss-licenses/issues <https://github.com/hesa/foss-licenses/issues>`_
+* Create an issue over at: `github.com/aboutcode-org/foss-licenses/issues <https://github.com/aboutcode-org/foss-licenses/issues>`_
 
-* Create a pull request over at: `github.com/hesa/foss-licenses <https://github.com/hesa/foss-licenses/>`_
+* Create a pull request over at: `github.com/aboutcode-org/foss-licenses <https://github.com/aboutcode-org/foss-licenses/>`_
 
 Reporting bugs
 --------------
@@ -28,10 +28,10 @@ If you find anything suspicious or plain wrong with the documentation
 or source code, contact us by any of the following:
 
 
-* Create an issue over at: `github.com/hesa/foss-licenses/issues <https://github.com/hesa/foss-licenses/issues>`_
+* Create an issue over at: `github.com/aboutcode-org/foss-licenses/issues <https://github.com/aboutcode-org/foss-licenses/issues>`_
 
 Contributing code
 -----------------
 
-* Create a pull request over at: `github.com/hesa/foss-licenses <https://github.com/hesa/foss-licenses/>`_
+* Create a pull request over at: `github.com/aboutcode-org/foss-licenses <https://github.com/aboutcode-org/foss-licenses/>`_
 

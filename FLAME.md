@@ -16,7 +16,7 @@ flame provides
 # Installing: 
 
 ```
-git clone git@github.com:hesa/foss-licenses.git
+git clone git@github.com:aboutcode-org/foss-licenses.git
 cd foss-licenses/python
 pip install -r requirements.txt
 python3 setup.py build sdist
