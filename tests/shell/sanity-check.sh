@@ -223,6 +223,7 @@ check_presence CC-BY-4.0 " -e 4 " " -e 3"
 check_presence CC-BY-SA-2.5 " -e 2.5 " " -e 3 -e 4"
 check_presence CC-BY-SA-3.0 " -e 3.0 " " -e 2 -e 4"
 check_presence CC-BY-SA-4.0 " -e 4 " " -e 2 -e 3"
+check_presence CC-BY-NC-SA-4.0 " -e 4.0" " -e 2 -e 3"
 
 check_presence CDDL-1.0 " -e 1.0 " " -e 1.1"
 check_presence CDDL-1.1 " -e 1.1" " -e 1.0"
@@ -230,7 +231,7 @@ check_presence CDDL-1.1 " -e 1.1" " -e 1.0"
 check_presence CECILL-B " -i -e cecill-b -e cecill\ b" " -e -A -e -C"
 check_presence CECILL-C " -i -e cecill-c -e cecill\ c" " -e -A -e -B"
 check_presence CECILL-1.1 " -i -e cecill-1.1 -e 1.1" " -e -A -e -B -e -C -e 2.1"
-check_presence CECILL-2.0  ' -i -e CECILL-2.0* -e "cecill version 2'   ' -e 1.1 -e 2.1 -e B' 
+check_presence CECILL-2.0  ' -i -e "CECILL-2.0*" -e "cecill version 2" -e "Cecill[a-zA-Z ]*2.0" '   ' -e 1.1 -e 2.1 -e B' 
 check_presence CECILL-2.1 " -i -e cecill-2.1 -e 2.1" " -e -A -e -B -e -C -e 1.1"
 
 check_presence CERN-OHL-P-2.0  ' -i -e CERN-OHL  -e "CERN Open" ' ' -e S -e W' 
@@ -243,12 +244,11 @@ check_presence CNRI-Python " -i -e CNRI  " ""
 check_presence python-ldap " -i -e ldap" ""
 
 check_presence Condor-1.1  ' -i -e Condor*'   '' 
-
-check_presence CPAL-1.0  ' -i -e CPAL-1 -e \"Common Public Attribution\" '   '' 
+check_presence CPAL-1.0  ' -i -e "CPAL" -e "Common Public Attribution" '   '' 
 check_presence CPL-1.0 " -e 1.0  -e 1 " " -e 0.5 -e 2"
 
-check_presence Classpath-exception-2.0 " -i -e classpath " " -e 1"
-check_presence CPOL-1.02  ' -i -e CPOL-1.02* -e \"Code Project Open License[a-zA-Z,0-9 .]*1.02\" \"CPOL[a-zA-Z,0-9 .]*1.02\" -e cpol'   '' 
+check_presence Classpath-exception-2.0 ' -i -e "classpath" ' ' -e 1'
+check_presence CPOL-1.02  ' -i -e "CPOL-1.02*" -e "Code Project Open License[a-zA-Z,0-9 .]*1.02" -e "CPOL[a-zA-Z,0-9 .]*1.02" -e cpol'   ''
 check_presence curl " -i -e curl " ""
 
 check_presence dtoa " -i -e dtoa -e x11 -e MIT" ""
@@ -328,8 +328,8 @@ check_presence LicenseRef-scancode-996-icu-1.0  ' -i -e 996-icu-1.0* -e anti-996
 check_presence LicenseRef-scancode-anti-capitalist-1.4  ' -i -e anti-capitalist -e anticapitalist '   ''
 check_presence LicenseRef-scancode-boost-original " -i -e original " ""
 check_presence LicenseRef-scancode-bsl-1.0 "-i -e bsl" " -i -e busl -e 1.1"
-check_presence LicenseRef-scancode-cmu-mit " -i -e cmu"
-check_presence LicenseRef-scancode-commons-clause  ' -i -e LicenseRef-scancode-commons-clause* -e \"commons clause\"'   '' 
+check_presence LicenseRef-scancode-cmu-mit ' -i -e cmu' ''
+check_presence LicenseRef-scancode-commons-clause  ' -i -e "LicenseRef-scancode-commons-clause*" -e "commons clause"'   '' 
 check_presence LicenseRef-scancode-cvwl " -i -e cvwl -e MITRE " ""
 check_presence LicenseRef-scancode-g10-permissive " -i -e  g10 " ""
 check_presence LicenseRef-scancode-hessla  ' -i -e LicenseRef-scancode-hessla* -e HESSLA -e "Hacktivismo Enhanced-Source Software License Agreement"'   '' 
@@ -338,7 +338,7 @@ check_presence LicenseRef-scancode-ibm-as-is " -i -e ibm " ""
 check_presence LicenseRef-scancode-indiana-extreme " -i -e indiana " " -e 1.2"
 check_presence LicenseRef-scancode-iso-8879 " -i 8879 " ""
 check_presence LicenseRef-scancode-jasper-1.0 " -i -e jasper" ""
-check_presence LicenseRef-scancode-josl-1.0 " -i josl-1 -e jabber " ""
+check_presence LicenseRef-scancode-josl-1.0 ' -i -e josl -e jabber ' ''
 check_presence LicenseRef-scancode-lha  ' -i -e LicenseRef-scancode-lha* -e Lha -e "License of Lha"'   '' 
 check_presence LicenseRef-scancode-mit-old-style " -i -e old -e mit" " -i -e ^mit$"
 check_presence LicenseRef-scancode-phorum-2.0  ' -i -e phorum'   '' 
@@ -357,11 +357,11 @@ check_presence Libpng " -i -e libpng -e PNG  " " -e 2 "
 check_presence libpng-2.0 " -i -e libpng -e PNG  " ""
 check_presence libtiff " -i -e tiff  " ""
 check_presence Libtool-exception " -i -e libtool  " ""
-check_presence LiLiQ-P-1.1 " -i -e \"liliq-p\"  -e \"liliq p\" -e permissive "
-check_presence LiLiQ-R-1.1 " -i -e \"liliq-r\"  -e \"liliq r\" -e Réciprocité "
-check_presence LiLiQ-Rplus-1.1  ' -i -e LiLiQ-Rplus-1.1 -e \"License Libre\" '   ' -e 2 ' 
-check_presence Linux-OpenIB " -e -i openib" ""
-check_presence Linux-syscall-note " -i -e syscall  " ""
+check_presence LiLiQ-P-1.1 ' -i -e "liliq-p"  -e "liliq p" -e permissive ' ''
+check_presence LiLiQ-R-1.1 ' -i -e "liliq-r"  -e "liliq r" -e "Réciprocité" ' ''
+check_presence LiLiQ-Rplus-1.1  ' -i -e "LiLiQ-Rplus-1.1" -e "Réciprocité" -e "LiLiQ-R+" -e "LiLiQ Rplus" -e "License Libre" -e "liliq[-]*r" '   ' -e 2 '
+check_presence Linux-OpenIB ' -i -e openib ' ''
+check_presence Linux-syscall-note ' -i -e syscall ' ''
 check_presence LLVM-exception " -i -e llvm  " ""
 
 check_presence LPL-1.02  ' -i -e LPL-1.02 -e "LPL 1.02" -e lucent -e "LPL, Version 1.02" '   '' 
@@ -373,8 +373,8 @@ check_presence MirOS " -i -e MirOS -e mir-os" ""
 
 check_presence MIT " -i -e MIT -e Expat -e c-ares" " -i -e 0 -e we -e advert -e modern "
 check_presence MIT-0 " -e 0 -i -e \"no attribution\"" " -i -e we -e advert -e modern -e wu"
-check_presence MIT-advertising " -e 0 -i -e advertising -e enlighten" " -i -e \"no advertising\" -e wu -e 0 -e modern"
-check_presence MIT-CMU " -i -e cmu" " -i -e advertising -e 0 -e wu -e open"
+check_presence MIT-advertising ' -e 0 -i -e advertising -e enlighten' ' -i -e "no advertising" -e wu -e 0 -e modern'
+check_presence MIT-CMU ' -i -e cmu ' ' -i -e advertising -e 0 -e wu -e open'
 check_presence MIT-Modern-Variant " -i -e modern" " -i -e advertising -e 0 -e wu"
 check_presence MIT-open-group " -i -e opengroup -e open-group -e open\ group " " -i -e advertising -e modern -e 0 "
 check_presence MIT-Wu " -i -e wu -e addition " " -i -e advertising -e modern -e 0 "
@@ -387,7 +387,7 @@ check_presence MPL-2.0 " -e 2" " -e 1"
 check_presence MPL-2.0-no-copyleft-exception " -i -e 2 -e 'no[ \-]copyleft'" "-e 1"
 
 check_presence MS-PL " -i -e ms -e 'microsoft, pl'  -e 'microsoft public license' " " -i -e mpl"
-check_presence MS-RL  ' -i -e MS-RL -e "MS License,[ Va-z]* RL" -e "MS, Version RL" -e Microsoft Reciprocal'   '' 
+check_presence MS-RL  ' -i -e MS-RL -e "MS License,[ Va-z]* RL" -e "MS, Version RL" -e "Microsoft Reciprocal" '   '' 
 
 check_presence MulanPSL-1.0 " -e 1" " -e 2"
 check_presence MulanPSL-2.0 " -e 2" " -e 1"
@@ -401,8 +401,8 @@ check_presence NGPL " -i -e ngpl -e nethack" ""
 check_presence Nokia " -i -e nokia -e nokos " ""
 check_presence NOSL  ' -i -e NOSL* -e NETIZEN'   '' 
 check_presence NPOSL-3.0  ' -i -e NPOSL -e "Non[ \-]*Profit" -e nosl' '-e "[1-2]" -e "[4-9]" ' 
-check_presence NPL-1.0  ' -i -e NPL-1.0* -e "Netscape Public License [v]*1.0" '   ' -e 1.1' 
-check_presence NPL-1.1  ' -i -e NPL-1.1* -e "Netscape Public License [v]*1.1" -e "Netscape Public License [v]*1.0 -e "Netscape Public License Version 1.1" -e "http://www.mozilla.org/NPL/"  -e "mozilla.org/mpl/MPL/NPL/1.1/" '   ' -e 1.0' 
+check_presence NPL-1.0  ' -i -e "NPL-1.0*" -e "Netscape Public License [v]*1.0" '   ' -e 1.1' 
+check_presence NPL-1.1  ' -i -e "NPL-1.1*" -e "Netscape Public License [v]*1.1" -e "Netscape Public License [v]*1.0" -e "Netscape Public License Version 1.1" -e "http://www.mozilla.org/NPL/"  -e "mozilla.org/mpl/MPL/NPL/1.1/" '   ' -e 1.0'
 check_presence NTP " -i -e ntp -e network " ""
 
 check_presence OCaml-LGPL-linking-exception " -i -e ocaml" ""
@@ -416,25 +416,23 @@ check_presence OLDAP-2.3  " -i -e oldap -e open[\ ]*ldap" " -e 2.7 -e 2.8"
 check_presence OLDAP-2.7  " -i -e oldap -e open[\ ]*ldap" " -e 2.2 -e 2.8"
 check_presence OLDAP-2.8 " -i -e oldap -e open[\ ]*ldap" " -e 2.3 -e 2.7"
 check_presence OML " -i -e oml -e market -e fastcgi -e OM\ License" ""
-check_presence OpenSSL " -i -e openssl " ""
-check_presence OSC-1.0  ' -i -e OSC-1.0 -e OSC "[a-zA-Z]* 1.0" '   '' 
+check_presence OpenSSL ' -i -e "openssl" ' ''
+check_presence OSC-1.0  ' -i -e "OSC-1.0" -e "OSC [a-zA-Z]* 1.0" '   '' 
 check_presence OSET-PL-2.1  ' -i -e OSET -e OPL'   '' 
-check_presence OSL-1.0 " -i -e Open\ Software -e OSL-1 -e OSL\ 1 -e 'OSL[\, a-zA-Z ]*1.0'" " -e 2 -e 3"
-check_presence OSL-2.1 " -i -e Open\ Software -e OSL-2 -e OSL\ 2" " -e 3"
-check_presence OSL-3.0 " -i -e Open\ Software -e OSL-3 -e OSL\ 3" " -e 1 -e 2"
+check_presence OSL-1.0 ' -i -e "Open\ Software" -e "OSL-1" -e "OSL\ 1" -e "OSL[\, a-zA-Z ]*1.0"' ' -e 2 -e 3 '
+check_presence OSL-2.1 ' -i -e "Open\ Software" -e "OSL-2" -e "OSL\ 2" ' ' -e 3'
+check_presence OSL-3.0 ' -i -e "Open\ Software" -e "OSL-3" -e "OSL\ 3" ' '-e 1 -e 2'
 
-check_presence PHP-3.0  ' -i -e PHP[ ]License[, a-zA-Z]3.0'   ' -e 1' 
-check_presence PHP-3.01 ' -i -e PHP[ ]License[, a-zA-Z]3.01'   ' -e "3.0 " '
+check_presence PHP-3.0  ' -i -e "PHP[ ]License[, a-zA-Z]3.0" -e "3.0"'   ' -e 1' 
+check_presence PHP-3.01 ' -i -e "PHP[ ]License[, a-zA-Z]3.01" -e "3.01" -e "3.0.1"'   ' -e "3.0 " '
 check_presence Plexus " -i -e plexus -e classworlds " ""
-check_presence PostgreSQL " -i -e postgresql " ""
-check_presence Python-2.0.1 " -i -e Python " ""
-
-check_presence QPL-1.0  ' -i -e QPL[ \-,a-zA-Z]1.0 -e "Q Public License[ ]*1.0"'   ' -e 2' 
-
+check_presence PostgreSQL ' -i -e postgresql ' ''
+check_presence Python-2.0.1 ' -i -e Python ' ''
+check_presence QPL-1.0  ' -i -e "QPL" -e "Q Public License"'   ' -e 2' 
 check_presence romic-exception " -i -e romic " ""
-check_presence RPL-1.1  ' -i -e RPL[ ,a-zA-Z]*1.1 -e "Reciprocal Public License[ ,a-zA-Z]*1.1"'   ' -e' 
-check_presence RPL-1.5   ' -i -e RPL[ ,a-zA-Z]*1.4 -e "Reciprocal Public License[ ,a-zA-Z]*1.5"'   '' 
-check_presence RPSL-1.0  ' -i -e RPSL -e "RealNetworks Public Source License"'   '' 
+check_presence RPL-1.1  ' -i -e "rpl-1.1" -e "RPL[ ,a-zA-Z]*1.1" -e "Reciprocal Public License[ ,a-zA-Z]*1.1"'   '' 
+check_presence RPL-1.5   ' -i -e "RPL[ ,a-zA-Z]*1.5" -e "rpl-1.5" -e "Reciprocal Public License[ ,a-zA-Z]*1.5"'   '' 
+check_presence RPSL-1.0  ' -i -e "RPSL" -e "RealNetworks Public Source License"'   '' 
 
 check_presence Ruby  ' -i -e Ruby*'   '' 
 
