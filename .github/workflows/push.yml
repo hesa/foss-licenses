@@ -80,5 +80,5 @@ jobs:
          cat STATUS.md
 
       # If the generated files are updated, this action pushes a commit.
-      - uses: int128/update-generated-files-action@v2
+      - uses: int128/update-generated-files-action@175ec2a0d5a686553354249e974159cfa26725e1 # v2.119.0
  
