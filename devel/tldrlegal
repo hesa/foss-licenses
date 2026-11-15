@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# SPDX-FileCopyrightText: 2026 Henrik Sandklef
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+TMP_FILE=tldrlegal.tmp
+touch ${TMP_FILE}
+
+verbose()
+{
+    echo $* 1>&2
+}
+
+verbosen()
+{
+    echo -n $* 1>&2
+}
+
+check_license()
+{
+    local LICENSE="$1"
+    verbosen "$LICENSE: "
+    if [ $(grep -c -w "$LICENSE" ${TMP_FILE}) -ne 0 ]
+    then
+        verbose " already checked"
+        return
+    fi
+    verbose " checking"
+    echo "xdg-open \"https://www.tldrlegal.com/search?query=$LICENSE\""
+
+    echo $LICENSE >> $TMP_FILE
+
+    exit
+} 
+
+
+./devel/flame licenses | while read license
+do
+    check_license "$license"
+done
