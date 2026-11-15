@@ -13,7 +13,7 @@
                 "License :: OSI Approved :: Academic Free License (AFL)",
                 "AFLv2",
                 "AFL",
-                "License :: OSI Approved :: Academic Free License",
+              "License :: OSI Approved :: Academic Free License",
               "ACADEMIC FREE LICENSE _AFL_",
               "Academic Free License, all versions through 3.0",
               "AcademicFreeLicense"
@@ -176,12 +176,14 @@
             "Creative Commons Attribution-NoDerivs 4.0 license (a.k.a. CC BY-ND)",
             "ccbynd",
             "Creative Commons Attribution-NoDerivs 4.0 license (a.k.a. CC BY-ND)",
-            "ccbynd"
+            "ccbynd",
+            "Creative Commons Attribution-Non Commercial-Share Alike (CC-by-nc-sa)"
             ],
           "problem": "There are many versions and variants of the Creative Commons licenses ()e.g. CC-BY-SA-1.0, CC-BY-SA-2.0, CC-BY-3.0....). Without the version/variant of the license it is impossible to determine which of the versions is meant."
         },
         "CeCILL": {
-            "aliases": [
+          "aliases": [
+            "CeCILL FREE SOFTWARE LICENSE AGREEMENT Notice"
             ],
           "problem": "There are a couple of variants and versions of CeCILL licenses (e.g. CeCILL 1.0, CeCILL 1.0 English, CeCILL 2.0, CeCILL 2.1 ...). Without the version/variant of the license it is impossible to determine which of the versions is meant."
         },
@@ -336,6 +338,12 @@
             "Open Software License, all versions through 3.0"
           ],
             "problem": "This license has different versions (1.0, 1.1, 2.0, 2.1 and 3.0) and variantes. Without a version number clearly distinguishing the version it is impossible to determine which of the versions is meant."
+        },
+        "PHP License": {
+          "aliases": [
+            "PHP"
+          ],
+            "problem": "This license has different versions (3.0, 3.01) and variantes. Without a version number clearly distinguishing the version it is impossible to determine which of the versions is meant."
         },
         "SIL Open Font License": {
             "aliases": [
