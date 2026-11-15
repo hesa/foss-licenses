@@ -18,7 +18,7 @@ fl = FossLicenses(config={
     'license-dir': 'tests/licenses',
     'level': 'logging.INFO'})
 
-# The tests below make sure that for example "OReilly" isn't treated as "OR eilly". They originate from https://github.com/hesa/foss-licenses/issues/174
+# The tests below make sure that for example "OReilly" isn't treated as "OR eilly". They originate from https://github.com/aboutcode-org/foss-licenses/issues/174
 
 def test_174_OReilly():
     for op in ['WITH', 'with', 'w/', 'OR', 'AND']:

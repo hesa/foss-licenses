@@ -5,7 +5,7 @@
         "license": "CC-BY-4.0",
         "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
         "project": "FOSS Licenses",
-        "project_url": "https://github.com/hesa/foss-licenses/"
+        "project_url": "https://github.com/aboutcode-org/foss-licenses/"
     },
     "spdxid": "LicenseRef-dummy-no-compat",
     "scancode_key": "no-no-no",

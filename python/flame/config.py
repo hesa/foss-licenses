@@ -39,10 +39,10 @@ AUTHOR
   Henrik Sandklef
 
 PROJECT SITE
-  https://github.com/hesa/flame
+  https://github.com/aboutcode-org/foss-licenses
 
 REPORTING BUGS
-  File a ticket at https://github.com/hesa/flame/issues
+  File a ticket at https://github.com/aboutcode-org/foss-licenses/issues
 
 COPYRIGHT
   Copyright (c) 2024 Henrik Sandklef<hesa@sandklef.com>.

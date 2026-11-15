@@ -29,7 +29,7 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    if: github.repository == 'hesa/foss-licenses'
+    if: github.repository == 'aboutcode-org/foss-licenses'
 
     steps:
     - name: Checkout

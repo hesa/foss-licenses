@@ -26,7 +26,7 @@ def add_to_file(filename):
         _add_data(meta, 'license', 'CC-BY-4.0')
         _add_data(meta, 'copyright', 'Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>')
         _add_data(meta, 'project', 'FOSS Licenses')
-        _add_data(meta, 'project_url', 'https://github.com/hesa/foss-licenses/')
+        _add_data(meta, 'project_url', 'https://github.com/aboutcode-org/foss-licenses/')
         #print(json.dumps(json_data, indent=4))
 
         with open(filename, "w") as fp:

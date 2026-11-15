@@ -22,7 +22,7 @@ then
 fi
 
 
-EXPECTED="\"https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md\""
+EXPECTED="\"https://raw.githubusercontent.com/aboutcode-org/foss-licenses/main/var/disclaimer.md\""
 ACTUAL="$(find . -name "*.json" | xargs grep disclaimer | grep http | cut -d : -f 3-10 | head -1 | sed 's/[, ]*//g')"
 if [ "$EXPECTED" != "$ACTUAL" ]
 then

@@ -54,12 +54,12 @@ test_flame()
 
 echo "Testing issues"
 echo "=============="
-echo " https://github.com/hesa/foss-licenses/issues/214"
+echo " https://github.com/aboutcode-org/foss-licenses/issues/214"
 echo " ---------------------------------------------------"
 test_flame license "GPL" "GPL-1.0-only OR GPL-2.0-only OR GPL-3.0-only"
 echo
 
-echo " https://github.com/hesa/foss-licenses/issues/239"
+echo " https://github.com/aboutcode-org/foss-licenses/issues/239"
 echo " ---------------------------------------------------"
 test_flame license "Eclipse Public License -v 1.0" "EPL-1.0"
 test_flame unknown "Eclipse Public License -v 1.0" "OK"
