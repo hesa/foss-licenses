@@ -1,11 +1,11 @@
 {
     "meta": {
-        "disclaimer": "https://raw.githubusercontent.com/hesa/foss-licenses/main/var/disclaimer.md",
+        "disclaimer": "https://raw.githubusercontent.com/aboutcode-org/foss-licenses/main/var/disclaimer.md",
         "comment": "",
         "license": "CC-BY-4.0",
         "copyright": "Copyright (c) 2026 Henrik Sandklef <hesa@sandklef.com>",
         "project": "FOSS Licenses",
-        "project_url": "https://github.com/hesa/foss-licenses/"
+        "project_url": "https://github.com/aboutcode-org/foss-licenses/"
     },
     "name": "GPL 2.0 only",
     "scancode_key": "gpl-2.0",
