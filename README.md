@@ -14,14 +14,14 @@ FOSS Licenses consists of:
 * license meta data for FOSS licenses adding useful information to
   existing licenses aiming at simplifying compliance work.
 
-* [flame](https://github.com/hesa/foss-licenses/blob/main/FLAME.md) - command line program
+* [flame](https://github.com/aboutcode-org/foss-licenses/blob/main/FLAME.md) - command line program
 
-* [Python API](https://github.com/hesa/foss-licenses/blob/main/PYTHON_API.md)
+* [Python API](https://github.com/aboutcode-org/foss-licenses/blob/main/PYTHON_API.md)
 
 
 ## License meta data
 
-The meta data can be found in the [var directory](https://github.com/hesa/foss-licenses/tree/main/var). Each license has a JSON file with meta information and a LICENSE file with the license text. The meta data consists of:
+The meta data can be found in the [var directory](https://github.com/aboutcode-org/foss-licenses/tree/main/var). Each license has a JSON file with meta information and a LICENSE file with the license text. The meta data consists of:
 
 * other names or aliases for licenses (e.g. "GNU GPL v. 2" is replaced by "GPL-2.0-only")
 
@@ -111,7 +111,7 @@ Do you miss a license that you want support for. Create an issue with the follow
 
 ## How
 
-* create an [issue](https://github.com/hesa/foss-licenses/issues)
+* create an [issue](https://github.com/aboutcode-org/foss-licenses/issues)
 
 * create PR for code or license contributions
 
@@ -193,11 +193,11 @@ the unknown license with the known and with same compatibility.
 
 ## Python API
 
-See [Python API](https://github.com/hesa/foss-licenses/blob/main/PYTHON_API.md)
+See [Python API](https://github.com/aboutcode-org/foss-licenses/blob/main/PYTHON_API.md)
 
 ## Command line program
 
-You can extend [flame](https://github.com/hesa/foss-licenses/blob/main/FLAME.md), the command line program, in two different ways:
+You can extend [flame](https://github.com/aboutcode-org/foss-licenses/blob/main/FLAME.md), the command line program, in two different ways:
 
 * using the option `additional-license-dir`
 
