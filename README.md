@@ -57,7 +57,7 @@ Current support:
 |Type            | Number |
 |----------------|--------|
 |Licenses        | 310    |
-|Aliases         | 3990   |
+|Aliases         | 3995   |
 |Compatibilities | 22     |
 |Operators       | 14     |
 |Ambiguities     | 190    |
