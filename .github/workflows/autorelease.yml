@@ -53,7 +53,7 @@ jobs:
         fi
 
     - name: Check if relevant for release
-      uses: dorny/paths-filter@v3.0.2
+      uses: dorny/paths-filter@ceb8a2b8f2d89434be7ff52d3de7ec3738c5cc9d
       id: code-changes
       with:
         filters: |
@@ -108,14 +108,14 @@ jobs:
 
     - name: Commit new version
       if: steps.release-needed.outputs.DO_RELEASE == 'true'
-      uses: actions-x/commit@v6
+      uses: actions-x/commit@803b20e5b72c0425eb7919c42c321e67c5bc5d2d
       with:
         files: ${{ env.VERSION_FILE }} .bumpversion.cfg
         message: 'Release ${{ steps.version-bump.outputs.new_version }}'
 
     - name: Create new release
       if: steps.release-needed.outputs.DO_RELEASE == 'true'
-      uses: ncipollo/release-action@v1
+      uses: ncipollo/release-action@339a81892b84b4eeb0f6e744e4574d79d0d9b8dd
       with:
         tag: ${{ steps.version-bump.outputs.new_version }}
         generateReleaseNotes: true
@@ -123,7 +123,7 @@ jobs:
 
     - name: Publish package
       if: steps.release-needed.outputs.DO_RELEASE == 'true' && env.PYPI_PUBLISH == '1'
-      uses: pypa/gh-action-pypi-publish@release/v1
+      uses: pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086
       with:
         packages-dir: python/dist
         user: __token__
